@@ -1,0 +1,14 @@
+*{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.header{
+    background-image:url(./img/forest.png);
+    position: relative;
+}
+.martex{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
