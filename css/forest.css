@@ -9,6 +9,21 @@
 }
 .martex{
     position: absolute;
-    top:0px;
-    left: 0px;
+    top:50px;
+    left: 50px;
 }
+.nav {
+    margin-left: 100px;
+  }
+  .nav a {
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left:200px;
+   
+    display: inline;
+  }
