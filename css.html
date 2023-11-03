@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section {
+                padding: 5px;
+                border: 3px solid black;
+                padding: 8px;
+                margin: 10px;
+                line-height: 40px;
+            }
+           
+            code{
+                font-size: 22px;
+                 border: 3px solid black;
+                 margin: 22px;
+                 padding: 9px;
+                 line-height: 40px;
+               
+            }
+            p{
+                font-size: 22px;
+            }
+            ul{
+                font-size: 22px;
+            }
+            h1{
+                text-align: center;
+                font-size: 22px;
+            }
+            h4{
+                font-size: 22px;
+            }
+            table,th,tr,td{
+                border: 3px solid black;
+                align-items: center;
+                text-align: center;
+                border-collapse: collapse;
+                margin: 8px;
+                padding: 10px;
+            }
+            .foot{
+                font-size:22px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="definations">
+
+             <h1>CSS(cascading style sheet)</h1>
+            <div>
+            <h4>what is css?</h4>
+            <ul>
+            <li>css stands for cascading style sheet</li>
+            <li>css describe how HTML element are to be displayed on screen,paper,or in other media</li>
+            <li>It can control the layout of multiple web pages all at once</li>
+            </ul>
+            </div>
+            <div>
+                <h4>CSS syntax</h4>
+                <p>A css rule-set consist of a selector and a declaration black:</p>
+                <code>h1 {color(property):blue(value); font-size:12px;}</code>
+            </div>
+            <div>
+                <h1>CSS selector</h1>
+                <h4>1. Type selector</h4>
+                <ul>
+                    <li>A type selector is a name of HTML tag</li>
+                    <code>p{text-align:center;color:red;}</code>
+                    <li>the rule applies to all &lt;p&gt; tags in document</li>
+                </ul>
+                <h4>2.ID selector</h4>
+                <ul>
+                    <li>The id selector uses the id attribute of an html element to select a specific element</li>
+                    <li>To select an element with speific id, write a hash(#) character, followed by the id of the element</li>
+                    <code>#para1{text-align:center;color:red;}</code>
+                    <li>An id name start with a number!</li>
+                </ul>
+                <ul>
+                    <h4>3.class selector</h4>
+                    <li>The class selector select html element with a specific class attribute.</li>
+                    <li>to select element with a specific class, write a period (.) characte , followed by the class name.</li>
+                    <code>.center {text-align:center; color:red;}</code>
+                </ul>
+                <ul>
+                    <h4>4.Grouping</h4>
+                    <li>The grouping selector select all the HTML element with same style definations</li>
+                    <code>h1, h2, p {text-align:center; color:red;}</code>
+                </ul>
+                <ul>
+                    <h4>5.Universal selector</h4>
+                    <li>the universal selector (*) select all the HTML elements on the page.</li>
+                    <code>*{text-align:center; 
+                        colr:red;}</code>
+                </ul>
+            </div>
+            <p class="foot">Page 1</p>
+        </section>
+        <br>
+        <section class="adding" >
+        <div>
+         <p>there are three ways of inserting a style sheet</p>
+         <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+         </ul>
+        </div>
+        <div>
+            <h4>1.External CSS</h4>
+            <ul>
+                <li>With an external style sheet. you can change the look of na entrire website by changing just one file!</li>
+                <li>style sheet files are imported to HTML documents by &lt;link&gt;</li>
+                <code> 
+                    &lt;head&gt; </br>
+                        &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; <br>
+                    &lt;/head&gt;<br><br>
+                    
+                    "mystyle.css"<br>
+                    body{background-color:lightblue;}<br>
+                    h1{color:navy; margin-left:40px;}<br>
+                </code>
+            </ul>
+            <h4>2.Internal CSS</h4>
+            <ul>
+                <li>An internal style sheet may be used if one single HTML page has a unique style.</li>
+                <li>You can put style sheet rules in the head of the document by  &lt;style &gt;</li>
+                <code> &lt;head &gt;<br> &lt;style &gt;<br>body{background-color:linen;}<br>h1{color:maroon; margin-left:40px;}<br>< /style> <br>< /head ></code>
+            </ul>
+            <h4>3.Inline CSS</h4>
+            <ul>
+                <li>An inline style may be used to apply a unique style for a singl element</li>
+                <li>The start tag can contain style sheet rules directly in HTML documents by the style attribute</li>
+                <code> &lt;body&gt;<br>
+                    &lt;h1 style="color:blue; text-align:center;"&gt;This is a heading  &lt;/h1&gt;
+                     &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+                    &lt;/body&gt;</code>
+            </ul>
+            <ul>
+                <h4>CSS comments</h4>
+                <li>comments are used to explain the code,and may help when you edit the code on the later date.</li>
+                <li>A CSS comment is placed inside the element, and start with / * and ends with */:</li>
+                <code> &lt;style&gt;
+                    / * this is a single-line comment */p {color:red;}
+                     &lt;/style&gt;</code>
+            </ul>
+        </div>
+        </section>
+        <br>
+        <section class="background">
+            <div>
+                <h1>Background properties</h4>
+                <ul>
+                    <h4>1.background-color</h4>
+                    <li>The background-color property specifies the background color of an element</li>
+                    <code>h1{background-color:green;}</code>
+                    <li>opacity/transparency:- The opacity property specifies the opacity/transparency of an element.it can take a value from 0.0-1.0</li>
+                    <code>p{
+                        background-color:green;
+                        opacity:0.3;} </code>
+                </ul>
+                <ul>
+                    <h4>2.background-image</h4>
+                    <li>The background-image property specifies an image to use as the background of the element</li>
+                    <code>Example:
+                         body{background-image:url("paper.gif"):}</code>
+                </ul>
+                <ul>
+                    <h4>3.background-repeat </h4>
+                    <li>sets how a background image will be repeated</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>pepeat</td>
+                        <td>Default. The background image will be replicated horizontally and vertically</td>
+                    </tr>
+                    <tr>
+                        <td>Repeat-x</td>
+                        <td>The background image will be repeated horizontally</td>
+                    </tr>
+                    <tr>
+                        <td>Repeat-y</td>
+                        <td>The background will be repeated vertically</td>
+                    </tr>
+                    <tr>
+                        <td>No-repeat</td>
+                        <td>The backgroung-image will be displayed only once</td>
+                    </tr>
+                </table>
+                <br>
+                <code>body{background-image:url("gradient_bg.png");
+                    background-repeat:repeat-x;} </code>
+                    <ul>
+                        <h4>4.background-position</h4>
+                        <li>The background-position property is used to specify the position of the background-image.</li>
+                        <code>body{
+                        background-image:url("img_tree.png");
+                        background-repeat:no-repeat;
+                        background-position:right-top;    
+                        }</code>
+                    </ul>
+                    <ul>
+                        <h4>5.background-attachment</h4>
+                        <li>The background-attachment property specifies wether the background image should scroll or to be fixed</li>
+                        <code style="border: 3px solid black;">body{
+                            background-image:url("img_tree.png");
+                            background-repeat:no-repeat;
+                            background-position:right-top;
+                            background-attachment:fixed;    
+                            }</code>
+                    </ul>
+                    <ul>
+                        <h4>6.background-size</h4>
+                        <li>specifies the size of the background images.</li>
+                        <code style="border: 3px solid black;">body{
+                            background-image:url("img_tree.png");
+                            background-repeat:no-repeat;
+                            background-position:right-top;
+                            background-attachment:fixed;
+                            background-size:80px 60px;    
+                            }</code>
+                            <li>Contain: scale the image to the largest size such that both its width and its height can fit inside the content area</li>
+                            <li>Cover: Scale the background image to be as large as possible so that the background area is completely covered by the background image</li>
+                    </ul>
+                    <ul>
+                        <h4>7.background-origin</h4>
+                        <li>The CSS background-origin specify where the background image is positioned.</li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>border-box</td>
+                            <td>the background image startsfrom the upper left corner of the border</td>
+                        </tr>
+                        <tr>
+                            <td>Padding-box</td>
+                            <td>(default) the background image start from the upper left corner of the padding edge</td>
+                        </tr>
+                        <tr>
+                            <td>content-box</td>
+                            <td>the background image start from the upper left corner of the content</td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <h4>background-clip</h4>
+                        <li>The CSS background-clip property specifies the painting area of the background.</li>
+                        <table>
+                            <tr>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>border-box</td>
+                                <td>(default) the background is painted to the outside edge of the padding</td>
+                            </tr>
+                            <tr>
+                                <td>content-box</td>
+                                <td>the background is painted within the content box</td>
+                            </tr>
+                        </table>
+                    </ul>
+            </div>
+        </section>
+    </body>
+</html>
