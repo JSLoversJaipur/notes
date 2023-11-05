@@ -267,7 +267,257 @@
                             </tr>
                         </table>
                     </ul>
+                    <ul>
+                        <h4>background-Shorthand property</h4>
+                        <li>Specifies all the background properties in one single property</li>
+                        <li>When using the shorthand property the order of the property value is:</li>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-rtepeat</li>
+                        <li>background-attachment</li>
+                        <li>background-position</li>
+                        <code>body{
+                            background:#ffffff url("img_tree.png")no-repeat right-top;
+                        }</code>
+                    </ul>
             </div>
+        </section>
+        <section class="text">
+            <div>
+                <h3>Text properties</h3>
+                <ul>
+                    <h4>1.Text color</h4>
+                    <li>The color property is used to set the color of the text.The color is specified by:</li>
+                    <code>{color:blue;}
+                        h1{color:green;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>2.Text-allignment</h4>
+                    <li>The text-align property is used to set the horizontal allignment of a text</li>
+                    <li>A text can be left or right aligned,centered,or justified</li>
+                    <code>h1{text-align:center;}</code>
+                </ul>
+                <ul>
+                    <h4>3.Vertical-allignment</h4>
+                    <li>the vertical-allign property set the vertical allignment of the element</li>
+                    <code>img.top{vertical-align:top;}
+                        img.middle{vertical-align:middle;}
+                        img.top{vertical-align:top;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>4.Text-decoration</h4>
+                    <li>The text-decoration property is used to set or remove decoration from the text</li>
+                    <li>The value text-decoration:none; is often used to remove underline from the links:</li>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>None</td>
+                            <td>Default.Defines a normal text</td>
+                        </tr>
+                        <tr>
+                            <td>Underline</td>
+                            <td>Defines a line under the text</td>
+                        </tr>
+                        <tr>
+                            <td>overline</td>
+                            <td>Defines a line over the text</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul>
+                    <h4>5.Text transformation</h4>
+                    <li>The text-transformation property is used to specify the uppercase and lowercase letters in the text</li>
+                    <code>p.uppercase{text-transform:uppercase;}
+                        p.lowercase{text-transform:lowercase;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>6.Text-indentation</h4>
+                    <li>The text-indent property is used to specify the indentation of the first line of the text.</li>
+                    <code>Example:- p{text-indent:50px;}</code>
+                </ul>
+                <ul>
+                    <h4>7.Letter spacing</h4>
+                    <li>The letter-spacing property is used to specift the space between characters in a text</li>
+                    <code>Example:-h1{letter-spacing:3px;}</code>
+                </ul>
+                <ul>
+                    <h4>8.Line Height</h4>
+                    <li>The line height property is used to specify the space between the lines:</li>
+                    <code>p.small{line-height:0.8;}
+                        p.big{line-height:1.8;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>Word spacing</h4>
+                    <li>The word spacing property is used to specify the space between the word in a text</li>
+                    <code>h1{word-spacing:10px;}</code>
+                </ul>
+                <ul>
+                    <h4>10.White space</h4>
+                    <li>The white space property specifies how white space inside an element an is handeled</li>
+                    <code>p{white-space:nowrap;}</code>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>Default.White space is ignored by the browser</td>
+                        </tr>
+                        <tr>
+                            <td>pre</td>
+                            <td>White-space is preserved by the browser.Acts like the &lt;pre&gt; tag in HTML</td>
+                        </tr>
+                        <tr>
+                            <td>Nowrap</td>
+                            <td>The text will never wrap, it continues on the same line until a &lt;br&gt; tag is used</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul>
+                    <h4>11.Text-shadow</h4>
+                    <li>The text shadow property add shadow to the text</li>
+                    <code>h1{text-shadow:2px 2px;}</code>
+                    <li>In its simplest use, you can only specify the horizontal shadow(2px) and the vertical shadow(2px):</li>
+                    <li>Text shadow color</li>
+                    <code>h1{text-shadow:2px 2px red;}</code>
+                    <li>Blur effect to shadow</li>
+                    <code>h1{text-shadow:2px 2px 5px red;}</code>
+                </ul>
+                <ul>
+                    <h4>12.Text overflow</h4>
+                    <li>Specifies how overflowed content that is not displayed should be signled to the user</li>
+                    <li>clipped:- clip the text</li>
+                    <li>Ellipsis:-Render an ellipsis(...) to represent clipped text</li>
+                </ul>
+                <ul>
+                    <h4>13.Word wrapping</h4>
+                    <li>The CSS word-wrap property allow long word to be able to broken and wrap onto the next line.</li>
+                    <code>&lt;style&gt;
+                        p.test{width:1em; border:1px solid #000000; word-wrap:break-word;}
+                        >&lt;/style&gt;
+                    </code>
+                </ul>
+                <ul>
+                    <h4>14.Word-breaking</h4>
+                    <li>The CSS word-break property specifies line breaking rules.</li>
+                    <li>Keep-all</li>
+                    <li>Break-all</li>
+                    <code>p.text1{word-break:Keep-all;}</code>
+                </ul>
+                <ul>
+                    <h4>15.Writing mode</h4>
+                    <li>Specifies whether the line of text are laid out horizontally or vertically.</li>
+                    <code>p.test1{writing-mode:horizontal-tb;}
+                        span.test2{writing-mode:vertical-rl;}
+                    </code>
+                </ul>
+            </div>
+        </section>
+        <section class="Font-properties">
+        <div>
+            <ul>
+                <h4>1.Font Family</h4>
+                <li>Font-family property is a prioritized list of font family name for an element</li>
+                <code>.serif{font-family:"Times New Roman",Times,serif;}</code>
+            </ul>
+            <ul>
+                <h4>2.Font style</h4>
+                <li>set the font style</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>Default.Display a normal font</td>
+                    </tr>
+                    <tr>
+                        <td>Italic</td>
+                        <td>Display an italic font</td>
+                    </tr>
+                    <tr>
+                        <td>Oblique</td>
+                        <td>Display an Oblique font</td>
+                    </tr>
+                </table>
+                <code>p.normal{font-style:normal;}
+                    p.italic{font-style:italic;}
+                </code>
+            </ul>
+            <ul>
+                <h4>3.Font-weight</h4>
+                <li>Specifies the weight of a font</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>Default.Define normal characters</td>
+                    </tr>
+                    <tr>
+                        <td>Bold/Bolder</td>
+                        <td>Defines thick/thicker characters</td>
+                    </tr>
+                    <tr>
+                        <td>Lighter</td>
+                        <td>Defines lighter character</td>
+                    </tr>
+                    <tr>
+                        <td>100-900(with the intertval of 100)</td>
+                        <td>Defines from thin to thick characters 400 is the same as normal, and 700 is the same as bold</td>
+                    </tr>
+                </table>
+                <code>p.thick{font-weight:bold;}</code>
+            </ul>
+            <ul>
+                <h4>4.Font variant</h4>
+                <li>Specifies whether or not a text should be displayed in a small-caps font</li>
+                <li>In a small-caps font, all lowercase letter are converted to uppercase letter. however the converted uppercase letter appears in a smaller font size than the original uppercase letter in the text.</li>
+                <code>p.small{
+                font-variant:small-caps;  
+                }</code>
+            </ul>
+            <ul>
+                <h4>5.font-size</h4>
+                <li>Sets the size of the text</li>
+                <li>Font size with the pixels</li>
+                <code>h1{
+                    font-size:40px;
+                }
+                </code>
+                <li>Font size with em:- 1em is equal to the current font sizw. The default text size in browsers is 16px.</li>
+                <code>h1{font-size:2.5em; /*40px/16-2.5em*/}</code>
+            </ul>
+            <ul>
+                <h4>6.Font-stretch</h4>
+                <li>the font stretch property allow you to make text narrower(condensed) or wider(expanded).</li>
+                <h3>Responsive font size</h3>
+                <li>the text sizer can be set with a VW unit, which means the "Viewport width"</li>
+                <li>That way the text size will follow the size of the browser window.</li>
+                <h3>Font shorthand</h3>
+                <li>to shorthand the code, it is also possible to specify all the individual font properties in one property</li>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+                <li>font-size</li>
+                <li>font-family</li>
+            </ul>
+            <ul>
+                <h4>Margins</h4>
+                <li></li>
+            </ul>
+        </div>
         </section>
     </body>
 </html>
