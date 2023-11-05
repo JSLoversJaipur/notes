@@ -7,11 +7,27 @@
     <title>Introduction to Html</title>
 </head>
 <style>
-    body{
-        margin: 3%;
+    .page1{
+       margin: 3%;
+        border:2px solid black;
+        padding-left: 20px;
+    }
+    .page2{
+      margin: 3%;
+    border:1px solid black;
+    padding-left: 20px;
+    }
+    
+    .page2 table,th,td{
+      border:2px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      margin:20px ;
+      width:97%;
     }
 </style>
 <body>
+  <section class="page1">
     <h1 style="text-align:center;"><U>Introduction to HTML</U></h1>
     <h2><u>What is Html?</u></h2>
     <ul>
@@ -60,5 +76,82 @@
         <li>Some element don't have content</li>
         <li>Opening and closing tags merge into one.</li>
     </ul>
+    <p style="text-align:center">Page 1</p>
+    </section>
+    <section class="page2">
+    <table>
+      <tr>
+        <td>Start tag</td>
+        <td>Element content</td>
+        <td>End tag</td>
+      </tr>
+      <tr>
+        <th>&lt;h1&gt;</th>
+        <th>My First Heading</th>
+        <th>&lt;/h1&gt;</th>
+      </tr>
+      <tr>
+        <th>&lt;p&gt;</th>
+        <th>My First paragraph</th>
+        <th>&lt;/p&gt;</th>
+      </tr>
+    </table>
+    <h2><u>Other Tags</u></h2>
+    <ul>
+      <li>&lt;br&gt; - Break tag for line break.</li>
+      <li>&lt;hr&gt; - The &lt;hr&gt; tag define a thematic break in an Html page.</li>
+      <li>&lt;pre&gt; - The HTML &lt;pre&gt; element defines preformated  text.</li>
+      <li>&lt;img&gt; - To insert image in document.</li>
+    </ul>
+    <h2><u>HTML Headings</u></h2>
+    <ul>
+      <li>HTML headings are titles or subtitles that you want  to display on the webpage.</li>
+      <li>HTML headings are defined with &lt;h1&gt; to &lt;h6&gt; tags</li>
+      <li>&lt;h1&gt; defines the most important heading &lt;h6&gt; defines the least impotant heading.</li>
+    </ul>
+    <h2><u>HTML Paragraph</u></h2>
+    <ul>
+      <li>The HTML &lt;p&gt; elements defines a paragraph.</li>
+      <li>A paragraph always starts on a new line,and browser automatically add some white space<br>
+      before and after a paragraph.</li>
+    </ul>
+    <h2>Example</h2>
+    <ul>
+      <li>open text editor(Notepad)</li>
+      <li>Type following example
+        &lt;html&gt;<br>
+        &lt;body&gt;<br>
+        &lt;h1&gt;My first heading&lt;/h1&gt;<br>
+        &lt;h2&gt;My second heading&lt;/h2&gt;<br>
+        &lt;hr&gt;<br>
+        &lt;p&gt;My First pargraph&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+      </li>
+      <li>Save file as myfirstpage.html</li>
+      <li>Run it on your browser.(Chrome,Mozilla etc)</li>
+    </ul>
+    <h2><u>Fonts and Formating</u></h2>
+    <ul>
+      <li>The &lt;font&gt; tag is used to add style, size,and color to the text on your site, Use the size, color and face.</li>
+      <li>Use a &lt;basefont&gt; tag to set all of your text to the same size,face, and color. </li>
+    </ul>
+    <h2><u>Font Size</u></h2>
+    <ul>
+      <li>Set the size of your font.</li>
+      <li>Example<br>
+       
+          &lt;p&gt;<br>
+          &lt;font size="5"&gt;Here is a size 5&lt;/font&gt;<br>
+          &lt;/p&gt;
+       
+      </li>
+    </ul>
+    <h2><u>Font Color</u></h2>
+    <ul>
+      <li>set the color of your font.</li>
+    </ul>
+    <p style="text-align:center">Page 2</p>
+    </section>
 </body>
 </html>
