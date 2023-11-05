@@ -18,12 +18,31 @@
     padding-left: 20px;
     }
     
-    .page2 table,th,td{
-      border:2px solid black;
+    table,th,td{
+      border:1px solid black;
+      width:100%;
       border-collapse: collapse;
+      margin: 8px;
+      padding: 10px;
       text-align: center;
-      margin:20px ;
-      width:97%;
+      align-items: center;
+    }
+    .Fonts{
+      border:1px solid black;
+      width:50%;
+    }
+    .page3{
+      margin: 3%;
+    border:1px solid black;
+    padding-left: 20px;
+    }
+    .text-col{
+      border:1px solid black;
+      width:50%;
+    }
+    .face{
+      border:1px solid black;
+      width:50%;
     }
 </style>
 <body>
@@ -81,19 +100,19 @@
     <section class="page2">
     <table>
       <tr>
-        <td>Start tag</td>
-        <td>Element content</td>
-        <td>End tag</td>
+        <th>Start tag</th>
+        <th>Element content</th>
+        <th>End tag</th>
       </tr>
       <tr>
-        <th>&lt;h1&gt;</th>
-        <th>My First Heading</th>
-        <th>&lt;/h1&gt;</th>
+        <td>&lt;h1&gt;</td>
+        <td>My First Heading</td>
+        <td>&lt;/h1&gt;</td>
       </tr>
       <tr>
-        <th>&lt;p&gt;</th>
-        <th>My First paragraph</th>
-        <th>&lt;/p&gt;</th>
+        <td>&lt;p&gt;</td>
+        <td>My First paragraph</td>
+        <td>&lt;/p&gt;</td>
       </tr>
     </table>
     <h2><u>Other Tags</u></h2>
@@ -140,11 +159,11 @@
     <ul>
       <li>Set the size of your font.</li>
       <li>Example<br>
-       
+       <p class="Fonts">
           &lt;p&gt;<br>
           &lt;font size="5"&gt;Here is a size 5&lt;/font&gt;<br>
           &lt;/p&gt;
-       
+      </p>
       </li>
     </ul>
     <h2><u>Font Color</u></h2>
@@ -152,6 +171,27 @@
       <li>set the color of your font.</li>
     </ul>
     <p style="text-align:center">Page 2</p>
+    </section>
+    <section class="page3">
+    <ul>
+      <li>Examle</li>
+      <p class="text-col">
+        &lt;p&gt;<br>
+        &lt;font color="red"&gt;This text is red&lt;/font&gt;<br>
+        &lt;/p&gt;
+      </p>
+    </ul>
+    <h2><u>Font face</u></h2>
+    <ul>
+      <li>Set the color of your font</li>
+      <li>Example</li>
+      <p class="face">
+     &lt;p&gt;<br>
+     &lt;font face="garamond"&gt;This pargragraph has had its font...&lt;/fonts&gt;<br>
+     &lt;/p&gt;
+     </p>
+    </ul>
+    <h2><u>Other Font Formatting Tags</u></h2>
     </section>
 </body>
 </html>
