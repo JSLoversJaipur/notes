@@ -18,9 +18,9 @@
     padding-left: 20px;
     }
     
-    table,th,td{
+    .page2 table,th,td{
       border:1px solid black;
-      width:100%;
+      width:70%;
       border-collapse: collapse;
       margin: 8px;
       padding: 10px;
@@ -47,6 +47,24 @@
     .attri{
       border:1px solid black;
       width:50%;
+    }
+    .page4{
+      margin: 3%;
+    border:1px solid black;
+    padding-left: 20px;
+    }
+    .text-align{
+      border:1px solid black;
+      width:50%;
+    }
+    .page4 table,th,td{
+      border:1px solid black;
+      width:70%;
+      border-collapse: collapse;
+      margin: 8px;
+      padding: 10px;
+      text-align: center;
+      align-items: center;
     }
 </style>
 <body>
@@ -219,8 +237,94 @@
       <li>Attributes provide extra information about a tag. For instance if we want to place an image on website.<br> we must tell our browser where  the image is located.</li>
       <li>Many HTML tags have a unique set of their own attributes. For  example if you need to set background color of body, you must use bgcolor attributes of the body tag.</li>
       <li>Example</li>
-      <p class="attri"></p>
+      <p class="attri">&lt;body bgcolor="black&gt;My text here.&lt;/body&gt;</p>
     </ul>
+    <h2>Title attribute</h2>
+    <ul>
+      <li>This attributes title an element and adds a tiny text pop-up to any HTML element much like the text<br> pop-ups of word processing programs.</li>
+      <li>&lt;h2 title="Hello There!"&gt;Titled Heading Tag&lt;/h2&gt;</li>
+      <li>Rollover your mouse over the heading to see the effect of this attribute!</li>
+    </ul>
+    </section>
+    <section class="page4">
+      <h2><u>Align Attribute</u></h2>
+ <ul>
+  <li>If you wish to change the horizontal location of your elements you may do using the align<br> attribute. you may align things left, right or center. </li>
+  <li>Example-</li>
+  <p class="text-align">
+    &lt;h2 align="left"&gt;Left align heading &lt;/h2&gt;<br>
+    &lt;h2 align="center"&gt;Centered Heading &lt;/h2&gt;<br>
+    &lt;h2 align= "right"&gt;Right aligned heading &lt;/h2&gt;<br>
+  </p>
+ </ul>
+ <h3><i>Note-Attribute Defaults</i></h3>
+ <ul>
+  <li><i>Many tags are assigned defaults.</i></li>
+  <li><i>For example, a pargraph tag will always align its text to the left unless it has an align attributein it specifying<br> Otherwise.</i></li>
+ </ul>
+ <h2><u>Generic Attribute</u></h2>
+ <table>
+  <tr>
+   <th>Attribute</th>
+   <th>Options</th>
+   <th>Function</th>
+  </tr>
+  <tr>
+    <td>align</td>
+    <td>right,left,center</td>
+    <td>Horizontally align tags</td>
+  </tr>
+  <tr>
+    <td>bgcolor</td>
+    <td>numeric, RGB values</td>
+    <td>numeric, hexidecimal, RCB values</td>
+  </tr>
+  <tr>
+    <td>background</td>
+    <td>URL</td>
+    <td>places an background image behind an element</td>
+   </tr>
+  <tr>
+    <td>width</td>
+    <td>Numeric Value</td>
+    <td>Specifies the width of tables, images, or table cells</td>
+  </tr>
+  <tr>
+    <td>height</td>
+    <td>Numeric Value</td>
+    <td>Specifies the height of tables, images, or table cells</td>
+  </tr>
+  <tr>
+    <td>title </td>
+    <td>User Defined</td>
+    <td>"Pop-up" title for your elements.</td>
+  </tr>
+  <tr>
+    <td>class</td>
+    <td>User Defined</td>
+    <td>Classifies an element for use with cascading style sheets.</td>
+  </tr>
+ </table>
+ <h2><u>Comments in HTML</u></h2>
+ &lt;!--comment here --&gt;
+ <h2 style="text-align:center"><u>HTML Chracter Entities(Symbols)</u></h2>
+ <ul>
+  <li>There are three parts to every entity.</li>
+     - Each begins with ampersand - &<br>
+     - Then the entities name - E Name,and<br>
+     - Finally a semincolon<br>
+  <li><b>Example:</b></li>
+    - &copy ;- &copy;
+    - Additional shapes<br>
+    - &nbsp - space<br>
+    - Less than Greater than:<br>
+    - &lt ; - less than<br>
+    -&gt ; - greater than<br>
+  <li> There are 3 different types of lists.</li>
+  -&lt;ol&gt; - ordered list; number<br>
+  -&lt;ul&gt; - unordered list; bullets<br>
+  -&lt;dl&gt; - defination list; dictionary<br>
+ </ul>
     </section>
 </body>
 </html>
