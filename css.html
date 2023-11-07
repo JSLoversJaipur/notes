@@ -691,8 +691,117 @@
                     <td>Defines a 3D outset border.The effect depend on border-color value</td>
                 </tr>
             </table>
+            <code>p.dotted{border-style:dotted;}
+                p.dashed{border-style:dashed;}
+                p.mix{border-style:dotted dashed solid double;}
+            </code>
+        </ul>
+        <ul>
+            <h4>2.Border width</h4>
+            <li>specifies the width of the four borders.</li>
+            <code>
+                p.one{
+                    border-style:solid;
+                    border-width:5px;}
+            </code>
+        </ul>
+        <ul>
+            <h4>3.Border color</h4>
+            <li>specifies the color of the four borders.</li>
+            <code>
+                p.one{
+                    border-style:solid;
+                    border-color:red;}
+            </code>
+            <h3>Border shorthand</h3>
+            <li>The border property is a shorthand property for the folloeing individual border properties</li>
+            <li>border-width</li>
+            <li>border-style(Required)</li>
+            <li>border-color</li>
+            <h3>Rounded-borders</h3>
+            <li>The border-radius property is used to add rounded border to an element:</li>
+            <code>
+                p{
+                    border:2px solid black;
+                    border-radius:5px;
+                }
+            </code>
         </ul>
         </div>
+        </section>
+        <section class="outline">
+            <div>
+              <ul>
+                <h4>1.Outline style</h4>
+                <li>Specifies the style of the outline,and can have one of the following value:</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>Defines no outline</td>
+                    </tr>
+                    <tr>
+                        <td>Hidden</td>
+                        <td>Defines a hidden outline</td>
+                    </tr>
+                    <tr>
+                        <td>Dotted</td>
+                        <td>Defines a dotted outline</td>
+                    </tr>
+                    <tr>
+                        <td>Dashed</td>
+                        <td>Defines a dashed outline</td>
+                    </tr>
+                    <tr>
+                        <td>Solid</td>
+                        <td>Defines a solid outline</td>
+                    </tr>
+                    <tr>
+                        <td>Double</td>
+                        <td>Defines a double outline</td>
+                    </tr>
+                    <tr>
+                        <td>Groove</td>
+                        <td>Defines a 3D grooved outline.The effect depends on the border-color value</td>
+                    </tr>
+                    <tr>
+                        <td>Riged</td>
+                        <td>Defines a 3D rigid outline. The effect depend on border color value</td>
+                    </tr>
+                    <tr>
+                        <td>Inset</td>
+                        <td>defines a 3D inset outline. The effect depend on border color value</td>
+                    </tr>
+                    <tr>
+                        <td>Outset</td>
+                        <td>Defines a 3D outset outline.The effect depend on border-color value</td>
+                    </tr>
+                </table>
+              </ul>
+              <ul>
+                <h4>2.Outline Width</h4>
+                <li>Specifies the width of the outline</li>
+                <code>
+                    p.ex1{
+                        border:1px solid black;
+                        outline-style:solid;
+                        outline-color:red;
+                        outline-width:thin;
+                    }
+                </code>
+                <h3>Outline shorthand</h3>
+                <li>The outline property is a shorthand property for setting the following individual outline properties.</li>
+                <li>Outline-width</li>
+                <li>Outline-style(Required)</li>
+                <li>OUtline-color</li>
+                <code>
+                    p.ex3{outline:5px solid yellow;}
+                </code>
+              </ul>
+            </div>
         </section>
     </body>
 </html>
