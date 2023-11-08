@@ -425,9 +425,44 @@
     <h2><u>HTML &lt;picture&gt; tag</u></h2>
     <ul>
       <li>The HTML &lt;picture&gt; element gives web developers more flexibilities in specifying image resources.</li>
-      <li>The &lt;picture&gt; element contains One or more </li>
+      <li>The &lt;picture&gt; element contains One or more &lt;source&gt; elements, each referring to different images
+        <br> through the srcset attribute. This way the browser can choose the image that best fits the current view<br>
+        and/or devices.</li>
     </ul>
+    Example<br>
+    &lt;picture&gt;<br>
+    &lt;source srcset="img_food.jpg"&gt;<br>
+    &lt;source srcset="img_car.jpg"&gt;<br>
+    &lt;source srcset="img_girl.jpg"&gt;<br>
+    &lt;/picture&gt;
+    <h2><u>When to use the Picture Element</u></h2>
+    <ul>
+      <li><b>Bandwidth:-</b> If you have a small screen or device, it is not necessary to load a large image file. The
+        <br> browser will use the the first &lt;source&gt; element with matching attribute values, and ignore any of the
+        following elements.</li>
+      <li><b>Format Support:-</b>Some browser or devices may not support all image formats will use the first formats.
+        By using the &lt;picture&gt; element, you can add images of all formats, and the browser will use the first
+        format it <br> recnore any of the following elemognizes, and ignore any of the following elements.</li>
+    </ul>
+    <h2><u>Media Attribute</u></h2>
+    &lt;picture&gt;<br>
+    &lt;source media="(min-width:650px)" srcset="img_food.jpg"&gt;<br>
+    &lt;source media="(min-width:650px)" srcset="img_car.jpg"&gt;<br>
+    &lt;source src="img_girl.jpg"&gt;<br>
+    &lt;/picture&gt;
     <p style="text-align:center">Page 8</p>
+  </section>
+  <section class="page9">
+    <h2 style="text-align: center;"><u>Tables</u></h2>
+    <h2 style="text-align: center;"><u>Table(Basic tags)</u></h2>
+    <ul>
+      <li>Table are defined with the &lt;table&gt; tag.</li>
+      <li>A table is divided into rows (with &lt;tr&gt;),around</li>
+      <li>Each row divided into data (with the &lt;td&gt;). The letter td stands for "table data which is"<br>content of a data cell.</li>
+    </ul>
+    <p class="table-box">
+
+    </p>
   </section>
 </body>
 
