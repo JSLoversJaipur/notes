@@ -1,112 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            section {
-                padding: 5px;
-                border: 3px solid black;
-                padding: 8px;
-                margin: 10px;
-                line-height: 40px;
-            }
-           
-            code{
-                font-size: 22px;
-                 border: 3px solid black;
-                 margin: 22px;
-                 padding: 9px;
-                 line-height: 40px;
-               
-            }
-            p{
-                font-size: 22px;
-            }
-            ul{
-                font-size: 22px;
-            }
-            h1{
-                text-align: center;
-                font-size: 22px;
-            }
-            h4{
-                font-size: 22px;
-            }
-            table,th,tr,td{
-                border: 3px solid black;
-                align-items: center;
-                text-align: center;
-                border-collapse: collapse;
-                margin: 8px;
-                padding: 10px;
-            }
-            .foot{
-                font-size:22px;
-                text-align: center;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <section class="definations">
 
-             <h1>CSS(cascading style sheet)</h1>
-            <div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+</head>
+
+<body>
+    <section class="definations">
+
+        <h1>CSS(cascading style sheet)</h1>
+        <div>
             <h4>what is css?</h4>
             <ul>
-            <li>css stands for cascading style sheet</li>
-            <li>css describe how HTML element are to be displayed on screen,paper,or in other media</li>
-            <li>It can control the layout of multiple web pages all at once</li>
+                <li>css stands for cascading style sheet</li>
+                <li>css describe how HTML element are to be displayed on screen,paper,or in other media</li>
+                <li>It can control the layout of multiple web pages all at once</li>
             </ul>
-            </div>
-            <div>
-                <h4>CSS syntax</h4>
-                <p>A css rule-set consist of a selector and a declaration black:</p>
-                <code>h1 {color(property):blue(value); font-size:12px;}</code>
-            </div>
-            <div>
-                <h1>CSS selector</h1>
-                <h4>1. Type selector</h4>
-                <ul>
-                    <li>A type selector is a name of HTML tag</li>
-                    <code>p{text-align:center;color:red;}</code>
-                    <li>the rule applies to all &lt;p&gt; tags in document</li>
-                </ul>
-                <h4>2.ID selector</h4>
-                <ul>
-                    <li>The id selector uses the id attribute of an html element to select a specific element</li>
-                    <li>To select an element with speific id, write a hash(#) character, followed by the id of the element</li>
-                    <code>#para1{text-align:center;color:red;}</code>
-                    <li>An id name start with a number!</li>
-                </ul>
-                <ul>
-                    <h4>3.class selector</h4>
-                    <li>The class selector select html element with a specific class attribute.</li>
-                    <li>to select element with a specific class, write a period (.) characte , followed by the class name.</li>
-                    <code>.center {text-align:center; color:red;}</code>
-                </ul>
-                <ul>
-                    <h4>4.Grouping</h4>
-                    <li>The grouping selector select all the HTML element with same style definations</li>
-                    <code>h1, h2, p {text-align:center; color:red;}</code>
-                </ul>
-                <ul>
-                    <h4>5.Universal selector</h4>
-                    <li>the universal selector (*) select all the HTML elements on the page.</li>
-                    <code>*{text-align:center; 
-                        colr:red;}</code>
-                </ul>
-            </div>
-            <p class="foot">Page 1</p>
-        </section>
-        <br>
-        <section class="adding" >
+        </div>
         <div>
-         <p>there are three ways of inserting a style sheet</p>
-         <ul>
-            <li>External CSS</li>
-            <li>Internal CSS</li>
-            <li>Inline CSS</li>
-         </ul>
+            <h4>CSS syntax</h4>
+            <p>A css rule-set consist of a selector and a declaration black:</p>
+            <code>h1 {color(property):blue(value); font-size:12px;}</code>
+        </div>
+        <div>
+            <h1>CSS selector</h1>
+            <h4>1. Type selector</h4>
+            <ul>
+                <li>A type selector is a name of HTML tag</li>
+                <code>p{text-align:center;color:red;}</code>
+                <li>the rule applies to all &lt;p&gt; tags in document</li>
+            </ul>
+            <h4>2.ID selector</h4>
+            <ul>
+                <li>The id selector uses the id attribute of an html element to select a specific element</li>
+                <li>To select an element with speific id, write a hash(#) character, followed by the id of the element</li>
+                <code>#para1{text-align:center;color:red;}</code>
+                <li>An id name start with a number!</li>
+            </ul>
+            <ul>
+                <h4>3.class selector</h4>
+                <li>The class selector select html element with a specific class attribute.</li>
+                <li>to select element with a specific class, write a period (.) characte , followed by the class name.</li>
+                <code>.center {text-align:center; color:red;}</code>
+            </ul>
+            <ul>
+                <h4>4.Grouping</h4>
+                <li>The grouping selector select all the HTML element with same style definations</li>
+                <code>h1, h2, p {text-align:center; color:red;}</code>
+            </ul>
+            <ul>
+                <h4>5.Universal selector</h4>
+                <li>the universal selector (*) select all the HTML elements on the page.</li>
+                <code>*{text-align:center; 
+                        colr:red;}</code>
+            </ul>
+        </div>
+        <p class="foot">Page 1</p>
+    </section>
+    <br>
+    <section class="adding">
+        <div>
+            <p>there are three ways of inserting a style sheet</p>
+            <ul>
+                <li>External CSS</li>
+                <li>Internal CSS</li>
+                <li>Inline CSS</li>
+            </ul>
         </div>
         <div>
             <h4>1.External CSS</h4>
@@ -126,7 +88,7 @@
             <h4>2.Internal CSS</h4>
             <ul>
                 <li>An internal style sheet may be used if one single HTML page has a unique style.</li>
-                <li>You can put style sheet rules in the head of the document by  &lt;style &gt;</li>
+                <li>You can put style sheet rules in the head of the document by &lt;style &gt;</li>
                 <code> &lt;head &gt;<br> &lt;style &gt;<br>body{background-color:linen;}<br>h1{color:maroon; margin-left:40px;}<br>< /style> <br>< /head ></code>
             </ul>
             <h4>3.Inline CSS</h4>
@@ -147,11 +109,11 @@
                      &lt;/style&gt;</code>
             </ul>
         </div>
-        </section>
-        <br>
-        <section class="background">
-            <div>
-                <h1>Background properties</h4>
+    </section>
+    <br>
+    <section class="background">
+        <div>
+            <h1>Background properties</h4>
                 <ul>
                     <h4>1.background-color</h4>
                     <li>The background-color property specifies the background color of an element</li>
@@ -196,233 +158,233 @@
                 <br>
                 <code>body{background-image:url("gradient_bg.png");
                     background-repeat:repeat-x;} </code>
-                    <ul>
-                        <h4>4.background-position</h4>
-                        <li>The background-position property is used to specify the position of the background-image.</li>
-                        <code>body{
+                <ul>
+                    <h4>4.background-position</h4>
+                    <li>The background-position property is used to specify the position of the background-image.</li>
+                    <code>body{
                         background-image:url("img_tree.png");
                         background-repeat:no-repeat;
                         background-position:right-top;    
                         }</code>
-                    </ul>
-                    <ul>
-                        <h4>5.background-attachment</h4>
-                        <li>The background-attachment property specifies wether the background image should scroll or to be fixed</li>
-                        <code style="border: 3px solid black;">body{
+                </ul>
+                <ul>
+                    <h4>5.background-attachment</h4>
+                    <li>The background-attachment property specifies wether the background image should scroll or to be fixed</li>
+                    <code style="border: 3px solid black;">body{
                             background-image:url("img_tree.png");
                             background-repeat:no-repeat;
                             background-position:right-top;
                             background-attachment:fixed;    
                             }</code>
-                    </ul>
-                    <ul>
-                        <h4>6.background-size</h4>
-                        <li>specifies the size of the background images.</li>
-                        <code style="border: 3px solid black;">body{
+                </ul>
+                <ul>
+                    <h4>6.background-size</h4>
+                    <li>specifies the size of the background images.</li>
+                    <code style="border: 3px solid black;">body{
                             background-image:url("img_tree.png");
                             background-repeat:no-repeat;
                             background-position:right-top;
                             background-attachment:fixed;
                             background-size:80px 60px;    
                             }</code>
-                            <li>Contain: scale the image to the largest size such that both its width and its height can fit inside the content area</li>
-                            <li>Cover: Scale the background image to be as large as possible so that the background area is completely covered by the background image</li>
-                    </ul>
-                    <ul>
-                        <h4>7.background-origin</h4>
-                        <li>The CSS background-origin specify where the background image is positioned.</li>
-                    </ul>
+                    <li>Contain: scale the image to the largest size such that both its width and its height can fit inside the content area</li>
+                    <li>Cover: Scale the background image to be as large as possible so that the background area is completely covered by the background image</li>
+                </ul>
+                <ul>
+                    <h4>7.background-origin</h4>
+                    <li>The CSS background-origin specify where the background image is positioned.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>border-box</td>
+                        <td>the background image startsfrom the upper left corner of the border</td>
+                    </tr>
+                    <tr>
+                        <td>Padding-box</td>
+                        <td>(default) the background image start from the upper left corner of the padding edge</td>
+                    </tr>
+                    <tr>
+                        <td>content-box</td>
+                        <td>the background image start from the upper left corner of the content</td>
+                    </tr>
+                </table>
+                <ul>
+                    <h4>background-clip</h4>
+                    <li>The CSS background-clip property specifies the painting area of the background.</li>
                     <table>
                         <tr>
-                            <th>value</th>
+                            <th>Value</th>
                             <th>Description</th>
                         </tr>
                         <tr>
                             <td>border-box</td>
-                            <td>the background image startsfrom the upper left corner of the border</td>
-                        </tr>
-                        <tr>
-                            <td>Padding-box</td>
-                            <td>(default) the background image start from the upper left corner of the padding edge</td>
+                            <td>(default) the background is painted to the outside edge of the padding</td>
                         </tr>
                         <tr>
                             <td>content-box</td>
-                            <td>the background image start from the upper left corner of the content</td>
+                            <td>the background is painted within the content box</td>
                         </tr>
                     </table>
-                    <ul>
-                        <h4>background-clip</h4>
-                        <li>The CSS background-clip property specifies the painting area of the background.</li>
-                        <table>
-                            <tr>
-                                <th>Value</th>
-                                <th>Description</th>
-                            </tr>
-                            <tr>
-                                <td>border-box</td>
-                                <td>(default) the background is painted to the outside edge of the padding</td>
-                            </tr>
-                            <tr>
-                                <td>content-box</td>
-                                <td>the background is painted within the content box</td>
-                            </tr>
-                        </table>
-                    </ul>
-                    <ul>
-                        <h4>background-Shorthand property</h4>
-                        <li>Specifies all the background properties in one single property</li>
-                        <li>When using the shorthand property the order of the property value is:</li>
-                        <li>background-color</li>
-                        <li>background-image</li>
-                        <li>background-rtepeat</li>
-                        <li>background-attachment</li>
-                        <li>background-position</li>
-                        <code>body{
+                </ul>
+                <ul>
+                    <h4>background-Shorthand property</h4>
+                    <li>Specifies all the background properties in one single property</li>
+                    <li>When using the shorthand property the order of the property value is:</li>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-rtepeat</li>
+                    <li>background-attachment</li>
+                    <li>background-position</li>
+                    <code>body{
                             background:#ffffff url("img_tree.png")no-repeat right-top;
                         }</code>
-                    </ul>
-            </div>
-        </section>
-        <section class="text">
-            <div>
-                <h3>Text properties</h3>
-                <ul>
-                    <h4>1.Text color</h4>
-                    <li>The color property is used to set the color of the text.The color is specified by:</li>
-                    <code>{color:blue;}
+                </ul>
+        </div>
+    </section>
+    <section class="text">
+        <div>
+            <h3>Text properties</h3>
+            <ul>
+                <h4>1.Text color</h4>
+                <li>The color property is used to set the color of the text.The color is specified by:</li>
+                <code>{color:blue;}
                         h1{color:green;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>2.Text-allignment</h4>
-                    <li>The text-align property is used to set the horizontal allignment of a text</li>
-                    <li>A text can be left or right aligned,centered,or justified</li>
-                    <code>h1{text-align:center;}</code>
-                </ul>
-                <ul>
-                    <h4>3.Vertical-allignment</h4>
-                    <li>the vertical-allign property set the vertical allignment of the element</li>
-                    <code>img.top{vertical-align:top;}
+            </ul>
+            <ul>
+                <h4>2.Text-allignment</h4>
+                <li>The text-align property is used to set the horizontal allignment of a text</li>
+                <li>A text can be left or right aligned,centered,or justified</li>
+                <code>h1{text-align:center;}</code>
+            </ul>
+            <ul>
+                <h4>3.Vertical-allignment</h4>
+                <li>the vertical-allign property set the vertical allignment of the element</li>
+                <code>img.top{vertical-align:top;}
                         img.middle{vertical-align:middle;}
                         img.top{vertical-align:top;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>4.Text-decoration</h4>
-                    <li>The text-decoration property is used to set or remove decoration from the text</li>
-                    <li>The value text-decoration:none; is often used to remove underline from the links:</li>
-                    <table>
-                        <tr>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>None</td>
-                            <td>Default.Defines a normal text</td>
-                        </tr>
-                        <tr>
-                            <td>Underline</td>
-                            <td>Defines a line under the text</td>
-                        </tr>
-                        <tr>
-                            <td>overline</td>
-                            <td>Defines a line over the text</td>
-                        </tr>
-                    </table>
-                </ul>
-                <ul>
-                    <h4>5.Text transformation</h4>
-                    <li>The text-transformation property is used to specify the uppercase and lowercase letters in the text</li>
-                    <code>p.uppercase{text-transform:uppercase;}
+            </ul>
+            <ul>
+                <h4>4.Text-decoration</h4>
+                <li>The text-decoration property is used to set or remove decoration from the text</li>
+                <li>The value text-decoration:none; is often used to remove underline from the links:</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>None</td>
+                        <td>Default.Defines a normal text</td>
+                    </tr>
+                    <tr>
+                        <td>Underline</td>
+                        <td>Defines a line under the text</td>
+                    </tr>
+                    <tr>
+                        <td>overline</td>
+                        <td>Defines a line over the text</td>
+                    </tr>
+                </table>
+            </ul>
+            <ul>
+                <h4>5.Text transformation</h4>
+                <li>The text-transformation property is used to specify the uppercase and lowercase letters in the text</li>
+                <code>p.uppercase{text-transform:uppercase;}
                         p.lowercase{text-transform:lowercase;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>6.Text-indentation</h4>
-                    <li>The text-indent property is used to specify the indentation of the first line of the text.</li>
-                    <code>Example:- p{text-indent:50px;}</code>
-                </ul>
-                <ul>
-                    <h4>7.Letter spacing</h4>
-                    <li>The letter-spacing property is used to specift the space between characters in a text</li>
-                    <code>Example:-h1{letter-spacing:3px;}</code>
-                </ul>
-                <ul>
-                    <h4>8.Line Height</h4>
-                    <li>The line height property is used to specify the space between the lines:</li>
-                    <code>p.small{line-height:0.8;}
+            </ul>
+            <ul>
+                <h4>6.Text-indentation</h4>
+                <li>The text-indent property is used to specify the indentation of the first line of the text.</li>
+                <code>Example:- p{text-indent:50px;}</code>
+            </ul>
+            <ul>
+                <h4>7.Letter spacing</h4>
+                <li>The letter-spacing property is used to specift the space between characters in a text</li>
+                <code>Example:-h1{letter-spacing:3px;}</code>
+            </ul>
+            <ul>
+                <h4>8.Line Height</h4>
+                <li>The line height property is used to specify the space between the lines:</li>
+                <code>p.small{line-height:0.8;}
                         p.big{line-height:1.8;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>Word spacing</h4>
-                    <li>The word spacing property is used to specify the space between the word in a text</li>
-                    <code>h1{word-spacing:10px;}</code>
-                </ul>
-                <ul>
-                    <h4>10.White space</h4>
-                    <li>The white space property specifies how white space inside an element an is handeled</li>
-                    <code>p{white-space:nowrap;}</code>
-                    <table>
-                        <tr>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>Normal</td>
-                            <td>Default.White space is ignored by the browser</td>
-                        </tr>
-                        <tr>
-                            <td>pre</td>
-                            <td>White-space is preserved by the browser.Acts like the &lt;pre&gt; tag in HTML</td>
-                        </tr>
-                        <tr>
-                            <td>Nowrap</td>
-                            <td>The text will never wrap, it continues on the same line until a &lt;br&gt; tag is used</td>
-                        </tr>
-                    </table>
-                </ul>
-                <ul>
-                    <h4>11.Text-shadow</h4>
-                    <li>The text shadow property add shadow to the text</li>
-                    <code>h1{text-shadow:2px 2px;}</code>
-                    <li>In its simplest use, you can only specify the horizontal shadow(2px) and the vertical shadow(2px):</li>
-                    <li>Text shadow color</li>
-                    <code>h1{text-shadow:2px 2px red;}</code>
-                    <li>Blur effect to shadow</li>
-                    <code>h1{text-shadow:2px 2px 5px red;}</code>
-                </ul>
-                <ul>
-                    <h4>12.Text overflow</h4>
-                    <li>Specifies how overflowed content that is not displayed should be signled to the user</li>
-                    <li>clipped:- clip the text</li>
-                    <li>Ellipsis:-Render an ellipsis(...) to represent clipped text</li>
-                </ul>
-                <ul>
-                    <h4>13.Word wrapping</h4>
-                    <li>The CSS word-wrap property allow long word to be able to broken and wrap onto the next line.</li>
-                    <code>&lt;style&gt;
+            </ul>
+            <ul>
+                <h4>Word spacing</h4>
+                <li>The word spacing property is used to specify the space between the word in a text</li>
+                <code>h1{word-spacing:10px;}</code>
+            </ul>
+            <ul>
+                <h4>10.White space</h4>
+                <li>The white space property specifies how white space inside an element an is handeled</li>
+                <code>p{white-space:nowrap;}</code>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>Default.White space is ignored by the browser</td>
+                    </tr>
+                    <tr>
+                        <td>pre</td>
+                        <td>White-space is preserved by the browser.Acts like the &lt;pre&gt; tag in HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Nowrap</td>
+                        <td>The text will never wrap, it continues on the same line until a &lt;br&gt; tag is used</td>
+                    </tr>
+                </table>
+            </ul>
+            <ul>
+                <h4>11.Text-shadow</h4>
+                <li>The text shadow property add shadow to the text</li>
+                <code>h1{text-shadow:2px 2px;}</code>
+                <li>In its simplest use, you can only specify the horizontal shadow(2px) and the vertical shadow(2px):</li>
+                <li>Text shadow color</li>
+                <code>h1{text-shadow:2px 2px red;}</code>
+                <li>Blur effect to shadow</li>
+                <code>h1{text-shadow:2px 2px 5px red;}</code>
+            </ul>
+            <ul>
+                <h4>12.Text overflow</h4>
+                <li>Specifies how overflowed content that is not displayed should be signled to the user</li>
+                <li>clipped:- clip the text</li>
+                <li>Ellipsis:-Render an ellipsis(...) to represent clipped text</li>
+            </ul>
+            <ul>
+                <h4>13.Word wrapping</h4>
+                <li>The CSS word-wrap property allow long word to be able to broken and wrap onto the next line.</li>
+                <code>&lt;style&gt;
                         p.test{width:1em; border:1px solid #000000; word-wrap:break-word;}
                         >&lt;/style&gt;
                     </code>
-                </ul>
-                <ul>
-                    <h4>14.Word-breaking</h4>
-                    <li>The CSS word-break property specifies line breaking rules.</li>
-                    <li>Keep-all</li>
-                    <li>Break-all</li>
-                    <code>p.text1{word-break:Keep-all;}</code>
-                </ul>
-                <ul>
-                    <h4>15.Writing mode</h4>
-                    <li>Specifies whether the line of text are laid out horizontally or vertically.</li>
-                    <code>p.test1{writing-mode:horizontal-tb;}
+            </ul>
+            <ul>
+                <h4>14.Word-breaking</h4>
+                <li>The CSS word-break property specifies line breaking rules.</li>
+                <li>Keep-all</li>
+                <li>Break-all</li>
+                <code>p.text1{word-break:Keep-all;}</code>
+            </ul>
+            <ul>
+                <h4>15.Writing mode</h4>
+                <li>Specifies whether the line of text are laid out horizontally or vertically.</li>
+                <code>p.test1{writing-mode:horizontal-tb;}
                         span.test2{writing-mode:vertical-rl;}
                     </code>
-                </ul>
-            </div>
-        </section>
-        <section class="Font-properties">
+            </ul>
+        </div>
+    </section>
+    <section class="Font-properties">
         <div>
             <ul>
                 <h4>1.Font Family</h4>
@@ -580,159 +542,159 @@
                 </code>
             </ul>
             <ul>
-            <h4>List-style-position</h4>
-            <li>specifies the position of the list-item markers(bullet points).</li>
-            <li>list-style-position:outside;-means that the bullet point will be outside the list item</li>
-            <li>list-style-position:inside;-means that the bullet point will be inside the list item</li>
-            <h3>Removing default settings</h3>
-            <code>ul{list-style-type:none; margin:0; padding:0;}</code>
-        </ul>
-        <ul>
-            <h4>list-shorthand</h4>
-            <li>it nis used to set all the list properties in one declaration:</li>
-            <code>ul{list-style:square inside url("sqpurple.gif");}</code>
-        </ul>
-        <ul>
-            <h4>Height</h4>
-            <li>used to set the height of the element.</li>
-            <li>Height value:-auto,length,%,initial,inherit</li>
-            <code>
+                <h4>List-style-position</h4>
+                <li>specifies the position of the list-item markers(bullet points).</li>
+                <li>list-style-position:outside;-means that the bullet point will be outside the list item</li>
+                <li>list-style-position:inside;-means that the bullet point will be inside the list item</li>
+                <h3>Removing default settings</h3>
+                <code>ul{list-style-type:none; margin:0; padding:0;}</code>
+            </ul>
+            <ul>
+                <h4>list-shorthand</h4>
+                <li>it nis used to set all the list properties in one declaration:</li>
+                <code>ul{list-style:square inside url("sqpurple.gif");}</code>
+            </ul>
+            <ul>
+                <h4>Height</h4>
+                <li>used to set the height of the element.</li>
+                <li>Height value:-auto,length,%,initial,inherit</li>
+                <code>
                 div{
                     height:200px;
                 }
             </code>
-        </ul>
-        <ul>
-            <h4>width</h4>
-            <li>used to set the width of the element</li>
-            <li>Height value:-auto,length,%,initial,inherit</li>
-            <code>
+            </ul>
+            <ul>
+                <h4>width</h4>
+                <li>used to set the width of the element</li>
+                <li>Height value:-auto,length,%,initial,inherit</li>
+                <code>
                 div{
                     width:200px;
                 }
             </code>
-        </ul>
-        <ul>
-            <h4>Max-width</h4>
-            <li>set maxwidth of the element</li>
-            <li>Height value:-auto,length,%,initial,inherit</li>
-            <code>
+            </ul>
+            <ul>
+                <h4>Max-width</h4>
+                <li>set maxwidth of the element</li>
+                <li>Height value:-auto,length,%,initial,inherit</li>
+                <code>
                 div{
                  max-width:200px;
                 }
             </code>
-        </ul>
-        <ul>
-            <h4>Max-Height</h4>
-            <li>set max-height of the element.</li>
-            <li>Height value:-auto,length,%,initial,inherit</li>
-            <code>
+            </ul>
+            <ul>
+                <h4>Max-Height</h4>
+                <li>set max-height of the element.</li>
+                <li>Height value:-auto,length,%,initial,inherit</li>
+                <code>
                 div{
                     Max-height:200px;
                 }
             </code>
-        </ul>
-        <ul>
-            <h4>Min-Height</h4>
-            <li>set min-height of the element.</li>
-            <li>Height value:-auto,length,%,initial,inherit</li>
-            <code>
+            </ul>
+            <ul>
+                <h4>Min-Height</h4>
+                <li>set min-height of the element.</li>
+                <li>Height value:-auto,length,%,initial,inherit</li>
+                <code>
                 div{
                     Min-height:200px;
                 }
             </code>
-        </ul>
-        <ul>
-            <h2>Border properties</h2>
-            <h4>1.Border Style</h4>
-            <li>set the value of the four borders.</li>
-            <table>
-                <tr>
-                    <th>Value</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>none</td>
-                    <td>Defines no border</td>
-                </tr>
-                <tr>
-                    <td>Hidden</td>
-                    <td>Defines a hidden border</td>
-                </tr>
-                <tr>
-                    <td>Dotted</td>
-                    <td>Defines a dotted border</td>
-                </tr>
-                <tr>
-                    <td>Dashed</td>
-                    <td>Defines a dashed border</td>
-                </tr>
-                <tr>
-                    <td>Solid</td>
-                    <td>Defines a solid border</td>
-                </tr>
-                <tr>
-                    <td>Double</td>
-                    <td>Defines a double border</td>
-                </tr>
-                <tr>
-                    <td>Groove</td>
-                    <td>Defines a 3D grooved border.The effect depends on the border-color value</td>
-                </tr>
-                <tr>
-                    <td>Riged</td>
-                    <td>Defines a 3D rigid border. The effect depend on border color value</td>
-                </tr>
-                <tr>
-                    <td>Inset</td>
-                    <td>defines a 3D inset border. The effect depend on border color value</td>
-                </tr>
-                <tr>
-                    <td>Outset</td>
-                    <td>Defines a 3D outset border.The effect depend on border-color value</td>
-                </tr>
-            </table>
-            <code>p.dotted{border-style:dotted;}
+            </ul>
+            <ul>
+                <h2>Border properties</h2>
+                <h4>1.Border Style</h4>
+                <li>set the value of the four borders.</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>Defines no border</td>
+                    </tr>
+                    <tr>
+                        <td>Hidden</td>
+                        <td>Defines a hidden border</td>
+                    </tr>
+                    <tr>
+                        <td>Dotted</td>
+                        <td>Defines a dotted border</td>
+                    </tr>
+                    <tr>
+                        <td>Dashed</td>
+                        <td>Defines a dashed border</td>
+                    </tr>
+                    <tr>
+                        <td>Solid</td>
+                        <td>Defines a solid border</td>
+                    </tr>
+                    <tr>
+                        <td>Double</td>
+                        <td>Defines a double border</td>
+                    </tr>
+                    <tr>
+                        <td>Groove</td>
+                        <td>Defines a 3D grooved border.The effect depends on the border-color value</td>
+                    </tr>
+                    <tr>
+                        <td>Riged</td>
+                        <td>Defines a 3D rigid border. The effect depend on border color value</td>
+                    </tr>
+                    <tr>
+                        <td>Inset</td>
+                        <td>defines a 3D inset border. The effect depend on border color value</td>
+                    </tr>
+                    <tr>
+                        <td>Outset</td>
+                        <td>Defines a 3D outset border.The effect depend on border-color value</td>
+                    </tr>
+                </table>
+                <code>p.dotted{border-style:dotted;}
                 p.dashed{border-style:dashed;}
                 p.mix{border-style:dotted dashed solid double;}
             </code>
-        </ul>
-        <ul>
-            <h4>2.Border width</h4>
-            <li>specifies the width of the four borders.</li>
-            <code>
+            </ul>
+            <ul>
+                <h4>2.Border width</h4>
+                <li>specifies the width of the four borders.</li>
+                <code>
                 p.one{
                     border-style:solid;
                     border-width:5px;}
             </code>
-        </ul>
-        <ul>
-            <h4>3.Border color</h4>
-            <li>specifies the color of the four borders.</li>
-            <code>
+            </ul>
+            <ul>
+                <h4>3.Border color</h4>
+                <li>specifies the color of the four borders.</li>
+                <code>
                 p.one{
                     border-style:solid;
                     border-color:red;}
             </code>
-            <h3>Border shorthand</h3>
-            <li>The border property is a shorthand property for the folloeing individual border properties</li>
-            <li>border-width</li>
-            <li>border-style(Required)</li>
-            <li>border-color</li>
-            <h3>Rounded-borders</h3>
-            <li>The border-radius property is used to add rounded border to an element:</li>
-            <code>
+                <h3>Border shorthand</h3>
+                <li>The border property is a shorthand property for the folloeing individual border properties</li>
+                <li>border-width</li>
+                <li>border-style(Required)</li>
+                <li>border-color</li>
+                <h3>Rounded-borders</h3>
+                <li>The border-radius property is used to add rounded border to an element:</li>
+                <code>
                 p{
                     border:2px solid black;
                     border-radius:5px;
                 }
             </code>
-        </ul>
+            </ul>
         </div>
-        </section>
-        <section class="outline">
-            <div>
-              <ul>
+    </section>
+    <section class="outline">
+        <div>
+            <ul>
                 <h4>1.Outline style</h4>
                 <li>Specifies the style of the outline,and can have one of the following value:</li>
                 <table>
@@ -781,8 +743,8 @@
                         <td>Defines a 3D outset outline.The effect depend on border-color value</td>
                     </tr>
                 </table>
-              </ul>
-              <ul>
+            </ul>
+            <ul>
                 <h4>2.Outline Width</h4>
                 <li>Specifies the width of the outline</li>
                 <code>
@@ -801,8 +763,8 @@
                 <code>
                     p.ex3{outline:5px solid yellow;}
                 </code>
-              </ul>
-              <ul>
+            </ul>
+            <ul>
                 <h3>Outline offset</h3>
                 <li>The outline-offset property add space between an outline and the edge/border of an element</li>
                 <code>
@@ -813,63 +775,62 @@
                         outline-offset:15px;
                     }
                 </code>
-              </ul>
-              <ul>
+            </ul>
+            <ul>
                 <h3>Box-Model</h3>
                 <p>The css box model is essentially a box that wrap around every Html element.It consist of margin,border,padding, and the actual content. The image below illustrate the box model</p>
-              
-              </ul>
-              <ul>
+
+            </ul>
+            <ul>
                 <h4>Box-model</h4>
                 <li>content:-The content of the box where text and image appear</li>
                 <li>Padding:-Clears an area around the content the padding is transparent</li>
                 <li>Border:-A border that goes around the padding and content</li>
                 <li>Margin:-Clears an area outside the border, Yhe margin is transparent</li>
-              </ul>
-            </div>
-            <div>
-                <ul>
-                    <h3>Links</h3>
-                    <li>With css,links can be styled in different ways.</li>
-                    <li>Links can be styled with any css property(e.g. color,font-family,background,etc.).
-                        a{color:pink;}
-                    </li>
-                    <h4>Links state</h4>
-                    <li>The four link states are:-</li>
-                    <li>a:link-a normalunvisited link</li>
-                    <li>a:visited-a link that user has visited</li>
-                    <li>a:hover-a link when user mouse over it</li>
-                    <li>a:active-a link the moment it is clicked</li>
-                </ul>
-                <ul>
-                    <h4>1.color Example:</h4>
-                    <code>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h3>Links</h3>
+                <li>With css,links can be styled in different ways.</li>
+                <li>Links can be styled with any css property(e.g. color,font-family,background,etc.). a{color:pink;}
+                </li>
+                <h4>Links state</h4>
+                <li>The four link states are:-</li>
+                <li>a:link-a normalunvisited link</li>
+                <li>a:visited-a link that user has visited</li>
+                <li>a:hover-a link when user mouse over it</li>
+                <li>a:active-a link the moment it is clicked</li>
+            </ul>
+            <ul>
+                <h4>1.color Example:</h4>
+                <code>
                         a:link{color:red;}
                         a:visited{color:green;}
                         a:hover{color:pink;}
                         a:active{color:blue;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>2.Background color Example:</h4>
-                    <code>
+            </ul>
+            <ul>
+                <h4>2.Background color Example:</h4>
+                <code>
                         a:link{background-color:red;}
                         a:visited{background-color:green;}
                         a:hover{background-color:pink;}
                         a:active{background-color:blue;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>3.Link buttons(with border)</h4>
-                    <code>
+            </ul>
+            <ul>
+                <h4>3.Link buttons(with border)</h4>
+                <code>
                         a:link,a:visited{border:solid 3px #f44336; color:red; padding:14px 25px; text-align:center; text-decoration:none;}
                         a:hover,a:active{background-color:red; color:white;}
                     </code>
-                </ul>
-            </div>
-        </section>
-        <section class="css table">
-         <div>
+            </ul>
+        </div>
+    </section>
+    <section class="css table">
+        <div>
             <ul>
                 <h4>1.Table borders</h4>
                 <li>To specifies the table borders in css, use the border property.</li>
@@ -917,7 +878,7 @@
             </ul>
             <ul>
                 <h4>7.Horizontal Dividers</h4>
-                <li>Add the border-bottom property to  &lt;th&gt; or &lt;td&gt; for horizontal dividers:</li>
+                <li>Add the border-bottom property to &lt;th&gt; or &lt;td&gt; for horizontal dividers:</li>
                 <code>
                     th,td{border-bottom:1px solid #ddd;}
                 </code>
@@ -1031,108 +992,108 @@
                     img{position:absolute; left:0; top:0; z-index:-1;}
                 </code>
             </ul>
-         </div>
-        </section>
-        <section class="overflow">
-            <div>
-                <h2>overflow</h2>
-                <ul>
-                    <p>The overflow property specifies wether to clip the content or to add scrollbars when the content of the element is too big to fit in the specifies area.</p>
-                    <table>
-                        <tr>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>Visible</td>
-                            <td>Default. The overflow is not clipped The content renders outside the element box</td>
-                        </tr>
-                        <tr>
-                            <td>Hidden</td>
-                            <td>The overflow is clipped,and the rest of the content will be invisible</td>
-                        </tr>
-                        <tr>
-                            <td>Scroll</td>
-                            <td>The overflow is clipped, and a scrollbar is added to the rest of the content</td>
-                        </tr>
-                        <tr>
-                            <td>Auto</td>
-                            <td>Similar to scroll, but it adds scrollbar when necessary</td>
-                        </tr>
-                    </table>
-                    <h4>overflow-x and overflow-y</h4>
-                    <li>The overflow-x and overflow-y property specefies wether to change the overflow of content to just horizontally or vertyically.</li>
-                    <code>
+        </div>
+    </section>
+    <section class="overflow">
+        <div>
+            <h2>overflow</h2>
+            <ul>
+                <p>The overflow property specifies wether to clip the content or to add scrollbars when the content of the element is too big to fit in the specifies area.</p>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Visible</td>
+                        <td>Default. The overflow is not clipped The content renders outside the element box</td>
+                    </tr>
+                    <tr>
+                        <td>Hidden</td>
+                        <td>The overflow is clipped,and the rest of the content will be invisible</td>
+                    </tr>
+                    <tr>
+                        <td>Scroll</td>
+                        <td>The overflow is clipped, and a scrollbar is added to the rest of the content</td>
+                    </tr>
+                    <tr>
+                        <td>Auto</td>
+                        <td>Similar to scroll, but it adds scrollbar when necessary</td>
+                    </tr>
+                </table>
+                <h4>overflow-x and overflow-y</h4>
+                <li>The overflow-x and overflow-y property specefies wether to change the overflow of content to just horizontally or vertyically.</li>
+                <code>
                         div{overflow-x:hidden;
                         overflow-y:scroll;}
                     </code>
-                </ul>
-                <ul>
-                    <h4>Float</h4>
-                    <li>The float property is used for positioning and formatting e.g let an image float to the text in a container</li>
-                    <table>
-                        <tr>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>left</td>
-                            <td>the element float to the left of its container</td>
-                        </tr>
-                        <tr>
-                            <td>right</td>
-                            <td>the element float to the right side of the container</td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td>The element does not float(will be displayed just where it occur in the text). This is default</td>
-                        </tr>
-                        <tr>
-                            <td>inherit</td>
-                            <td>The element inherit the float value of its parent</td>
-                        </tr>
-                    </table>
-                </ul>
-                <ul>
-                    <h4>Clear</h4>
-                    <li>The clear property specifies what element can float beside the cleared element and on which side</li>
-                    <table>
-                        <tr>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>left</td>
-                            <td>No floating element is allowed on the left side </td>
-                        </tr>
-                        <tr>
-                            <td>right</td>
-                            <td>No floating element is allowed on the right side</td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td>No floating element is allowed on the left side or right side </td>
-                        </tr>
-                        <tr>
-                            <td>inherit</td>
-                            <td>The element inherit the clear value of its parent</td>
-                        </tr>
-                    </table>
-                </ul>
-                <ul>
-                    <h4>Opacity</h4>
-                    <p>The opacity property can take a value from 0.0-1.0 The lower value the more transparent</p>
-                    <code>
+            </ul>
+            <ul>
+                <h4>Float</h4>
+                <li>The float property is used for positioning and formatting e.g let an image float to the text in a container</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>left</td>
+                        <td>the element float to the left of its container</td>
+                    </tr>
+                    <tr>
+                        <td>right</td>
+                        <td>the element float to the right side of the container</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>The element does not float(will be displayed just where it occur in the text). This is default</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td>The element inherit the float value of its parent</td>
+                    </tr>
+                </table>
+            </ul>
+            <ul>
+                <h4>Clear</h4>
+                <li>The clear property specifies what element can float beside the cleared element and on which side</li>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>left</td>
+                        <td>No floating element is allowed on the left side </td>
+                    </tr>
+                    <tr>
+                        <td>right</td>
+                        <td>No floating element is allowed on the right side</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>No floating element is allowed on the left side or right side </td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td>The element inherit the clear value of its parent</td>
+                    </tr>
+                </table>
+            </ul>
+            <ul>
+                <h4>Opacity</h4>
+                <p>The opacity property can take a value from 0.0-1.0 The lower value the more transparent</p>
+                <code>
                         img{opacity:0.5;}
                     </code>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div>
-                <ul>
-                    <h4>Horizontal navigation bar(Menu bar)</h4>
-                    <code>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <ul>
+                <h4>Horizontal navigation bar(Menu bar)</h4>
+                <code>
                         ul{list-style-type:none; margin:0;
                         padding:0; overflow:hidden; background-color:#333;}
 
@@ -1141,46 +1102,43 @@
                         li a{display:block; color:white; text-align:center;
                         padding:14px 16px; text-decoration:none;}
                     </code>
-                </ul>
-                <ul>
-                    <h2>CSS Transform</h2>
-                    <li>1. 2D Transforms</li>
-                    <li>CSS transform allow you to move,rotate,scale, and skew elements.</li>
-                </ul>
-                <ul>
-                    <li>The translate() method</li>
-                    <li>The rotate() method rotates an element clockwise or counter-clockwise according to a certain degree.</li>
-                    <li>Example:- div{transform:rotate(20deg);}</li>
-                    <li>The rotate() method</li>
-                    <li>The translate method() moves an element from its current position(according to the parameters given for the X-axis and the Y-axis).</li>
-                    <li>Example:- div{transform:translate(50px, 100px);}</li>
-                    <li>The scale() Method</li>
-                    <li>The scale() method increase or decrease the size of an element(according to the parameter given for the width and the height).</li>
-                    <li>Example:- div{transform:scale(2,3);}</li>
-                    <li>The scaleX() method:- The scaleX() method increase or decrease the width of an element.Example: div{transform:scaleX(2)}</li>
-                    <li>The scaleY() method:- The scaleY() method increase or decrease the height of an element. Example:div{transform: scaleY(3);}</li>
-                    <li>The skew method:- The skew() method skews an element along the X and Y-axis given by the angles</li>
-                    <li>Example:-div{transform:skew(20deg, 10deg);}</li>
-                    <li>The skew() method skews an element along the X and Y-axis given by angles.Example:-div{transform:skew(20deg, 10deg);}</li>
-                    <li>The matrix() method:-The matrix() method take six parameters, contaning mathematic functions, which allows you to rotate, scale, move(translate), and skew elements.</li>
-                    <p>The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
-                        div{transform:matrix(1,-0.3,0,1,0,0);}
-                    </p>
-                </ul>
-                <ul>
-                    <h4>3 3D Transforms</h4>
-                    <li>With the CSS transform property you can use the following 3d transformation methods:</li>
-                    <li>The rotateX() method:- The rotate X() method rotates an element around it's X-axis at a given degree:
-                        Example:-#myDiv{transform:rotateX(150deg);}
-                    </li>
-                    <li>The rotateY() method:- The rotateY() method rotates an element around it's Y-axis at a given degree:
-                        Example:-#myDiv{transform:rotateY(150deg);}
-                    </li>
-                    <li>The rotateZ() method:- The rotateZ() method rotates an element around it's Z-axis at a given degree:
-                        Example:-#myDiv{transform:rotateZ(150deg);}
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </body>
+            </ul>
+            <ul>
+                <h2>CSS Transform</h2>
+                <li>1. 2D Transforms</li>
+                <li>CSS transform allow you to move,rotate,scale, and skew elements.</li>
+            </ul>
+            <ul>
+                <li>The translate() method</li>
+                <li>The rotate() method rotates an element clockwise or counter-clockwise according to a certain degree.</li>
+                <li>Example:- div{transform:rotate(20deg);}</li>
+                <li>The rotate() method</li>
+                <li>The translate method() moves an element from its current position(according to the parameters given for the X-axis and the Y-axis).</li>
+                <li>Example:- div{transform:translate(50px, 100px);}</li>
+                <li>The scale() Method</li>
+                <li>The scale() method increase or decrease the size of an element(according to the parameter given for the width and the height).</li>
+                <li>Example:- div{transform:scale(2,3);}</li>
+                <li>The scaleX() method:- The scaleX() method increase or decrease the width of an element.Example: div{transform:scaleX(2)}</li>
+                <li>The scaleY() method:- The scaleY() method increase or decrease the height of an element. Example:div{transform: scaleY(3);}</li>
+                <li>The skew method:- The skew() method skews an element along the X and Y-axis given by the angles</li>
+                <li>Example:-div{transform:skew(20deg, 10deg);}</li>
+                <li>The skew() method skews an element along the X and Y-axis given by angles.Example:-div{transform:skew(20deg, 10deg);}</li>
+                <li>The matrix() method:-The matrix() method take six parameters, contaning mathematic functions, which allows you to rotate, scale, move(translate), and skew elements.</li>
+                <p>The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) div{transform:matrix(1,-0.3,0,1,0,0);}
+                </p>
+            </ul>
+            <ul>
+                <h4>3 3D Transforms</h4>
+                <li>With the CSS transform property you can use the following 3d transformation methods:</li>
+                <li>The rotateX() method:- The rotate X() method rotates an element around it's X-axis at a given degree: Example:-#myDiv{transform:rotateX(150deg);}
+                </li>
+                <li>The rotateY() method:- The rotateY() method rotates an element around it's Y-axis at a given degree: Example:-#myDiv{transform:rotateY(150deg);}
+                </li>
+                <li>The rotateZ() method:- The rotateZ() method rotates an element around it's Z-axis at a given degree: Example:-#myDiv{transform:rotateZ(150deg);}
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
 </html>
