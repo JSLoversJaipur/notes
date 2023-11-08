@@ -87,3 +87,23 @@ td {
   border: 1px solid black;
   width: 50%;
 }
+.datalist{
+  border: 1px solid black;
+  width: 50%;
+}
+.button{
+  border: 1px solid black;
+  width: 50%;
+}
+.password{
+  border: 1px solid black;
+  width: 50%;
+}
+.radio{
+  border: 1px solid black;
+  width: 50%;
+}
+.checkboxes{
+  border: 1px solid black;
+  width: 50%;
+}

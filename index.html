@@ -637,6 +637,76 @@
     &lt;option value="cycle"&gt;cycle&lt;/option&gt;<br>
     &lt;/select&gt;<br>
     </p>
+    <h2>ATTRIBUTES for select</h2>
+    <ol>
+      <li>Name:- Adds an internal name of the field</li>
+      <li>Multiply:- Allows multiple choices if yes.</li>
+      <li>Option:- Individual items in the menu.</li>
+      <li>Size:- Use the size attribute to specify the number of visible values.</li>
+    </ol>
+    <h2>ATTRIBUTES FOR OPTIONS</h2>
+    <ol>
+      <li>Selected:- Default select the item</li>
+      <li>Value:- Value to send if selected </li>
+    </ol>
+    
+    <p style="text-align:center">Page 11</p>
+  </section>
+  <section class="page">
+    <h3>4.&lt;fieldset&gt; and &lt;legend&gt; Elements:-</h3>
+    <ul>
+      <li>The &lt;fieldset&gt; element is used to group related data in a form.</li>
+      <li>The &lt;legend&gt;elements defines a caption for the &lt;fieldset&gt; element. </li>
+    </ul>
+    <h3>5. &lt;datalist&gt; Element</h3>
+    <ul>
+      <li>The &lt;datalist&gt; element specifies a list of pre-defined options for an &lt;input&gt; elements </li>
+      <li>User will see a drop -down list of the pre-defined options as they input data.</li>
+    </ul>
+    <p class="datalist"><br>
+     &lt;from action="/action_page.php"&gt;<br>
+     &lt;input list="browsers"&gt;<br>
+     &lt;datalist name="browsers"&gt;<br>
+     &lt;option value="browser"&gt;<br>
+     &lt;option value ="Internet Explorer"&gt;<br>
+     &lt;option value="Firefox"&gt;<br>
+     &lt;option value="Chrome"&gt;<br>
+     &lt;option value="Opera"&gt;<br>
+     &lt;option value="Safari"&gt;<br>
+     &lt;/datalist&gt;<br>
+     &lt;/form&gt;<br>
+    </p>
+    <h3>6. &lt;button&gt; Element:-</h3> The &lt;button&gt; element defines a clickable <b>button</b>
+    <p class="button">
+     &lt;button type="button" oneclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;
+    </p>
+
+    <h3>Input Types</h3>
+    <h2>1. PASSWORD:-</h2>Password fields are similar to text fields. They show dots on the screen to prevent others<br> from reading the password you type.
+    <p class="password"><br>
+      &lt;form method="post" action="mailto:info@intuiteducation.org"&gt;<br>
+      Name:&lt;input type="text" size="10" maxlength="40" name="name"&gt;<br>
+      &lt;br/&gt;<br>
+      Password:&lt;input type="password" size="10" maxlength="10" name="password"&gt;<br>
+      &lt;/form&Gt;<br>
+    </p>
+    <h2>2. RADIO:-</h2>Radio Buttons are used to let the user select one and only one option of a limited number of <br>
+    choices.
+    <h2>ATTRIBUTES</h2>
+    <ul>
+      <li>Name:-defines which set of radio buttons that it is a part of</li>
+      <li>Value:-specifies what will be sent if the user choose this radio button</li>
+      <li>Checked:-Default check the field.</li>
+    </ul>
+    <p class="radio">
+    &lt;input class="radio" name="sex" value="male"&gt;Male<br>
+   &lt;input class="radio" name="sex" value="female"&gt;Female<br>
+    </p>
+    <h2>3. CHECKBOXES:-</h2>Checkboxes are used to let user select one or more options of limited number of <br>choices.
+    <p class="checkboxes">
+      &lt;form&gt;<br>
+      &lt;/form&gt;
+    </p>
   </section>
 
 </html>
