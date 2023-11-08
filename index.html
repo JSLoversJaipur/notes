@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <section class="page1">
+  <section class="page">
     <h1 style="text-align:center;"><U>Introduction to HTML</U></h1>
     <h2><u>What is Html?</u></h2>
     <ul>
@@ -61,7 +61,7 @@
     </ul>
     <p style="text-align:center">Page 1</p>
   </section>
-  <section class="page2">
+  <section class="page">
     <table>
       <tr>
         <th>Start tag</th>
@@ -137,7 +137,7 @@
     </ul>
     <p style="text-align:center">Page 2</p>
   </section>
-  <section class="page3">
+  <section class="page">
     <ul>
       <li>Examle</li>
       <p class="text-col">
@@ -197,7 +197,7 @@
     </ul>
     <p style="text-align:center">Page 3</p>
   </section>
-  <section class="page4">
+  <section class="page">
     <h2><u>Align Attribute</u></h2>
     <ul>
       <li>If you wish to change the horizontal location of your elements you may do using the align<br> attribute. you
@@ -280,7 +280,7 @@
     </ul>
     <p style="text-align:center">Page </p>
   </section>
-  <section class="page5">
+  <section class="page">
     <h2><u>1. Ordered List(OL)</u></h2>
     <ul>
       <li>&lt;ol start="5"&gt;</li>
@@ -339,7 +339,7 @@
     </ul>
     <p style="text-align:center">Page 6</p>
   </section>
-  <section class="page6">
+  <section class="page">
     <h2><u>Using file "html links.asp"</u></h2>
     <ol>
       <li>Label: This label is called name anchor.</li>
@@ -395,7 +395,7 @@
     </ul>
     <p style="text-align:center">Page 7</p>
   </section>
-  <section class="page7">
+  <section class="page">
     <h2><u>Vspace</u></h2>
     <ul>
       <li>Pixel</li>
@@ -452,18 +452,191 @@
     &lt;/picture&gt;
     <p style="text-align:center">Page 8</p>
   </section>
-  <section class="page9">
+  <section class="page">
     <h2 style="text-align: center;"><u>Tables</u></h2>
     <h2 style="text-align: center;"><u>Table(Basic tags)</u></h2>
     <ul>
       <li>Table are defined with the &lt;table&gt; tag.</li>
       <li>A table is divided into rows (with &lt;tr&gt;),around</li>
-      <li>Each row divided into data (with the &lt;td&gt;). The letter td stands for "table data which is"<br>content of a data cell.</li>
+      <li>Each row divided into data (with the &lt;td&gt;). The letter td stands for "table data which is"<br>content of
+        a data cell.</li>
     </ul>
     <p class="table-box">
+      &lt;table border="1"&gt;<br>
+      &lt;tr&gt;<br>
+      &lt;td&gt;row1, cell 1&lt;/td&gt;<br>
+      &lt;td&gt;row 1, cell 2&lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;tr&gt;<br>
+      &lt;td&gt;row 2, cell 1&lt;/td&gt;<br>
+      &lt;td&gt;row 2, cell 2&lt;/td&gt;<br>
+      &lt;/td&gt;<br>
+      &lt;/table&gt;
+    </p>
+    <h2><u>Heading in a Table</u></h2>
+    <ul>
+      <li>Heading in a table are table are defined with the &lt;th&gt; tag.</li>
+      <p class="tab-bor">
+        &lt;table border="1"&gt;<br>
+        &lt;tr&gt;
+        &lt;th&gt;
+        Heading
+        &lt;/th&gt;
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;
+        &lt;th&gt;
+        row1, cell1
+        &lt;/th&gt;
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;
+      </p>
+    </ul>
+    <h2><u>TABLE ATTRIBUTE</u></h2>
+    <h3>create a table with</h3>
+    <ul>
+      <li><b>background color or a background image:</b>
+        <ul>
+          <li>&lt;table bgcolor="red"&gt;</li>
+          <li>&lt;table background="bgdesert.jpg"&gt;</li>
+        </ul>
+      </li>
 
+      <li><b>background color or a background image in a cell:</b>
+        <ul>
+          <li>&lt;td background="bg.jpg"&gt;</li>
+
+        </ul>
+      </li>
+    </ul>
+    <h2><u>Rowspan</u></h2>
+    <ul>
+      <li>To make a cell span more than one row,use the rowspan attribute</li>
+    </ul>
+    <p class="rowspan">
+      &lt;tr&gt;<br>
+      &lt;th rowspan="2"&gt;&lt;/th&gt;<br>
+      &lt;td&gt;55577854&lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;tr&gt;<br>
+      &lt;td&gt;55577854&lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+    </p>
+    <p style="text-align:center">Page 9</p>
+  </section>
+  <section class="page">
+    <h2><u>Colspan</u></h2>
+    <ul>
+      <li>To make a cell span more than one column, use the colspan attribute.</li>
+    </ul>
+    <p class="colspan">
+      &lt;tr&gt;<br>
+      &lt;th&gt;Telephone&lt;/th&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;tr&gt;<br>
+      &lt;td&gt;55577854&lt;/td&gt;<br>
+      &lt;td&gt;55577855&lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+
+      <h2><u>Border attribute</u></h2>
+      <ul>
+        <li>&lt;table border="Thickness"&gt;</li>
+        <li>Example:- &lt;table border="5"&gt;</li>
+      </ul>
+      <h3>create a table with</h3>
+      <ul>
+        <li><b>NO border</b>
+          <ul>
+            <li>Border="0"</li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><b>Heading</b>
+          <ul>
+            <li>&lt;th&gt;Heading&lt;/th&gt;
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><b>Empty cells</b>
+          <ul>
+            <li>use &nbsp; to handle cells that have content.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Create a table with</h3>
+      <ul>
+        <li><b>Caption</b></li>
+      </ul>
+      <p class="caption">
+        &lt;table border="6"&gt;<br>
+        &lt;caption&gt;My Caption&lt;/cpation&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;100&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+
+        &lt;/border&gt;<br>
+      </p>
+      <h3>Create table with</h3>
+      <ul>
+        <li><b>cell padding</b>(create more white space between the cell and its borders)
+          <ul>
+            <li>&lt;table cellpadding="10"&gt;
+            <li><b>cell spacing</b>(increase the distance between the cells)
+              <ul>
+                &lt;table cellspacing="10"&gt;
+              </ul>
+            </li>
+          </ul>
+          <p style="text-align:center">Page 10</p>
+  </section>
+  <section class="page">
+    <h2 style="text-align: center;"><u>Forms</u></h2>
+    <h2><u>What are Forms</u></h2>
+    <ul>
+      <li>A form is an area where users are allowed to enter information such as their name phone no, email, address,
+        query etc</li>
+      <li>A form is defined with the &lt;form&gt; tag.</li>
+    </ul>
+    <h2>Form tag Attributes</h2>
+    <ol>
+      <li>Action:- Specifies the name of the file to send the content to</li>
+      <li>Method:- The "<b>post</b>" and "<b>get</b>" methods are two different methods for submitting data.</li>
+    </ol>
+    <h2>Form Elements</h2>
+    <p><h2><b>1. TEXT FIELD:-</b></h2> Text fields allow the user to input text in a single line.</p>
+    <p><b>Attribute:</b></p>
+    <ol>
+      <li>type= 'text':- Set the input field</li>
+      <li>size = '20':- Sets the width of the field</li>
+      <li>maxlength = '30':- sets the maximum length of the field</li>
+      <li>name:- Sets an internal name of the field</li>
+      <li>value:- Defines intial value in the field</li>
+    </ol>
+    <h2><b>2. TEXT AREA:-</b></h2>
+    <ul>
+      <li>Text areas are text fields that can span several lines.</li>
+      <li>It is used to enter longer text.</li>
+    </ul>
+    <p><b>ATTRIBUTES</b></p>
+    <ol>
+      <li>Rows:- no. of rows to be merged in text area.</li>
+      <li>Cols:- no. of columns to be merged in text area.</li>
+      <li>Name:- adds an internal name to the field.</li>
+    </ol>
+    <p class="textarea">
+      &lt;textarea cols="30" rows="10"&gt;<br>
+           Everything written between these tags will be presented in the textarea box.<br>
+      &lt;/textarea&gt;
+    </p>
+    <p><h2>3. Select Element:-</h2>To make drop-down menus serve the same purpose radio buttons cone selection<br> only or check boxes, is that it takes up less space.</p>
+    <p class="vehicle">
+    Vehicle:  &lt;select name="vehicles"&gt;<br>
+    &lt;option value="bike"&gt;Bike&lt;/option&gt;<br>
+    &lt;option value="car"&gt;car &lt;/option&gt;<br>
+    &lt;option value="cycle"&gt;cycle&lt;/option&gt;<br>
+    &lt;/select&gt;<br>
     </p>
   </section>
-</body>
 
 </html>
