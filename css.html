@@ -1033,5 +1033,93 @@
             </ul>
          </div>
         </section>
+        <section class="overflow">
+            <div>
+                <h2>overflow</h2>
+                <ul>
+                    <p>The overflow property specifies wether to clip the content or to add scrollbars when the content of the element is too big to fit in the specifies area.</p>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Visible</td>
+                            <td>Default. The overflow is not clipped The content renders outside the element box</td>
+                        </tr>
+                        <tr>
+                            <td>Hidden</td>
+                            <td>The overflow is clipped,and the rest of the content will be invisible</td>
+                        </tr>
+                        <tr>
+                            <td>Scroll</td>
+                            <td>The overflow is clipped, and a scrollbar is added to the rest of the content</td>
+                        </tr>
+                        <tr>
+                            <td>Auto</td>
+                            <td>Similar to scroll, but it adds scrollbar when necessary</td>
+                        </tr>
+                    </table>
+                    <h4>overflow-x and overflow-y</h4>
+                    <li>The overflow-x and overflow-y property specefies wether to change the overflow of content to just horizontally or vertyically.</li>
+                    <code>
+                        div{overflow-x:hidden;
+                        overflow-y:scroll;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>Float</h4>
+                    <li>The float property is used for positioning and formatting e.g let an image float to the text in a container</li>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>left</td>
+                            <td>the element float to the left of its container</td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td>the element float to the right side of the container</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td>The element does not float(will be displayed just where it occur in the text). This is default</td>
+                        </tr>
+                        <tr>
+                            <td>inherit</td>
+                            <td>The element inherit the float value of its parent</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul>
+                    <h4>Clear</h4>
+                    <li>The clear property specifies what element can float beside the cleared element and on which side</li>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>left</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inherit</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </section>
     </body>
 </html>
