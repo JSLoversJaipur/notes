@@ -819,7 +819,95 @@
                 <p>The css box model is essentially a box that wrap around every Html element.It consist of margin,border,padding, and the actual content. The image below illustrate the box model</p>
               
               </ul>
+              <ul>
+                <h4>Box-model</h4>
+                <li>content:-The content of the box where text and image appear</li>
+                <li>Padding:-Clears an area around the content the padding is transparent</li>
+                <li>Border:-A border that goes around the padding and content</li>
+                <li>Margin:-Clears an area outside the border, Yhe margin is transparent</li>
+              </ul>
             </div>
+            <div>
+                <ul>
+                    <h3>Links</h3>
+                    <li>With css,links can be styled in different ways.</li>
+                    <li>Links can be styled with any css property(e.g. color,font-family,background,etc.).
+                        a{color:pink;}
+                    </li>
+                    <h4>Links state</h4>
+                    <li>The four link states are:-</li>
+                    <li>a:link-a normalunvisited link</li>
+                    <li>a:visited-a link that user has visited</li>
+                    <li>a:hover-a link when user mouse over it</li>
+                    <li>a:active-a link the moment it is clicked</li>
+                </ul>
+                <ul>
+                    <h4>1.color Example:</h4>
+                    <code>
+                        a:link{color:red;}
+                        a:visited{color:green;}
+                        a:hover{color:pink;}
+                        a:active{color:blue;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>2.Background color Example:</h4>
+                    <code>
+                        a:link{background-color:red;}
+                        a:visited{background-color:green;}
+                        a:hover{background-color:pink;}
+                        a:active{background-color:blue;}
+                    </code>
+                </ul>
+                <ul>
+                    <h4>3.Link buttons(with border)</h4>
+                    <code>
+                        a:link,a:visited{border:solid 3px #f44336; color:red; padding:14px 25px; text-align:center; text-decoration:none;}
+                        a:hover,a:active{background-color:red; color:white;}
+                    </code>
+                </ul>
+            </div>
+        </section>
+        <section class="css table">
+         <div>
+            <ul>
+                <h4>1.Table borders</h4>
+                <li>To specifies the table borders in css, use the border property.</li>
+                <code>
+                    table,th,td{border:1px solid black;}
+                </code>
+            </ul>
+            <ul>
+                <h4>2.collapse table borders</h4>
+                <li>To specifies the border collapse property set wether the table border should be collapsed into a single border</li>
+                <code>
+                    table{border-collapse:collapse;}
+                    table,th,td{border:1px solid black;}
+                </code>
+            </ul>
+            <ul>
+                <h4>3.Table width and height</h4>
+                <li>Width and height of the table are defined by the width and height properties.</li>
+                <code>
+                    table{width:100%;}
+                    th{height:50px;}
+                </code>
+            </ul>
+            <ul>
+                <h4>4.Horizontal alignment</h4>
+                <li>The text align property sets the horizontal alignment(likeleft,right,or center) of the content in &lt;th&gt; or &lt;td&gt;.</li>
+                <code>
+                    th{text-align:left;}
+                </code>
+            </ul>
+            <ul>
+                <h4>5.Vertical alignment</h4>
+                <li>The vertical align property sets the vertical alignment (like top,bottom,or middle) of the content in &lt;th&gt; or &lt;td&gt;.</li>
+                <code>
+                    td{height:50px; vertical-align:bottom;}
+                </code>
+            </ul>
+         </div>
         </section>
     </body>
 </html>
