@@ -1162,7 +1162,23 @@
                     <li>The skew method:- The skew() method skews an element along the X and Y-axis given by the angles</li>
                     <li>Example:-div{transform:skew(20deg, 10deg);}</li>
                     <li>The skew() method skews an element along the X and Y-axis given by angles.Example:-div{transform:skew(20deg, 10deg);}</li>
-                    <li>The matrix() method:-The matrix() method take six parameters, contaning mathematic functions, which allows you </li>
+                    <li>The matrix() method:-The matrix() method take six parameters, contaning mathematic functions, which allows you to rotate, scale, move(translate), and skew elements.</li>
+                    <p>The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+                        div{transform:matrix(1,-0.3,0,1,0,0);}
+                    </p>
+                </ul>
+                <ul>
+                    <h4>3 3D Transforms</h4>
+                    <li>With the CSS transform property you can use the following 3d transformation methods:</li>
+                    <li>The rotateX() method:- The rotate X() method rotates an element around it's X-axis at a given degree:
+                        Example:-#myDiv{transform:rotateX(150deg);}
+                    </li>
+                    <li>The rotateY() method:- The rotateY() method rotates an element around it's Y-axis at a given degree:
+                        Example:-#myDiv{transform:rotateY(150deg);}
+                    </li>
+                    <li>The rotateZ() method:- The rotateZ() method rotates an element around it's Z-axis at a given degree:
+                        Example:-#myDiv{transform:rotateZ(150deg);}
+                    </li>
                 </ul>
             </div>
         </section>
