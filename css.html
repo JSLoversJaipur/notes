@@ -964,6 +964,73 @@
                     table{empty-cells:hide;}
                 </code>
             </ul>
+            <h2>Display property</h2>
+            <ul>
+                <li>The display property specifies if/how an element is displayed.</li>
+                <li>Block</li>
+                <li>Inline</li>
+            </ul>
+            <p>1.Block level element:-Block-level element always start on a new line and takes up the full width avaliable:-&lt;div&gt;,&lt;h1&gt;-&lt;h6&gt;,&lt;p&gt;,&lt;form&gt;,&lt;header&gt;</p>
+            <p>2.Inline element:-An inline element does not start on a new line and only takes up as much width as necessary. &lt;span&gt;,&lt;a&gt;,&lt;img&gt;</p>
+            <ul>
+                <h4>Display value</h4>
+                <li>None:-is commonly used with javascript to hide and show element without deleting and recreating them</li>
+                <li>Inline:-A common example is making inline &lt;li&gt; element for horizontal menus;</li>
+                <code>
+                    li{display:inline;}
+                </code>
+            </ul>
+            <h2>Position property</h2>
+            <ul>
+                <p>The position property specifies the type of positioning method used for an element</p>
+                <li>static</li>
+                <li>Relative</li>
+                <li>Fixed</li>
+                <li>Absolute</li>
+                <li>Sticky</li>
+            </ul>
+            <ul>
+                <h4>1.Position:static;</h4>
+                <li>static positioned element are not affected by the top,bottom,left, and right properties</li>
+                <code>
+                    div.static{position:static; border:3px solid #73AD21;}
+                </code>
+            </ul>
+            <ul>
+                <h4>2.Position:relative;</h4>
+                <li>An element with position:relative; is positioned relative to its normal position</li>
+                <code>
+                    div.Relative{position:relative; border:3px solid #73AD21;}
+                </code>
+            </ul>
+            <ul>
+                <h4>3.Position:Fixed;</h4>
+                <li>An element with position:fixed; is positioned relative to viewport, which means it always stay in the same place even if the page is scrolled.</li>
+                <code>
+                    div.fixwd{position:fixed; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
+                </code>
+            </ul>
+            <ul>
+                <h4>4.Position:absolute;</h4>
+                <li>An element with position:absolute; is positioned relative to the nearest positional ancestor</li>
+                <code>
+                    div.absolute{position:absolute; top:80px; height:100px; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
+                </code>
+            </ul>
+            <ul>
+                <h4>5.position:sticky;</h4>
+                <li>An element with position:sticky; is positioned based on user scroll position.</li>
+                <code>
+                    div.sticky{position:-webkit-sticky; /*safari*/ position:sticky; top:0;n background-color:green; border:2px solid #4CAF50}
+                </code>
+            </ul>
+            <ul>
+                <h4>6.overlapping element</h4>
+                <li>The z-index property specifies the stack order of an element (which element should be placed in front of, or behind,the others).</li>
+                <code>
+                    img{position:absolute; left:0; top:0; z-index:-1;}
+                </code>
+            </ul>
          </div>
         </section>
     </body>
