@@ -907,6 +907,49 @@
                     td{height:50px; vertical-align:bottom;}
                 </code>
             </ul>
+            <ul>
+                <h4>6.Table padding</h4>
+                <li>To control the space between the border and the content in a table, use the padding property on the &lt;th&gt; and &lt;td&gt; element:</li>
+                <code>
+                    th,td{padding:15px;
+                    text-align:left;}
+                </code>
+            </ul>
+            <ul>
+                <h4>7.Horizontal Dividers</h4>
+                <li>Add the border-bottom property to  &lt;th&gt; or &lt;td&gt; for horizontal dividers:</li>
+                <code>
+                    th,td{border-bottom:1px solid #ddd;}
+                </code>
+            </ul>
+            <ul>
+                <h4>*.Hoverable table</h4>
+                <li>Use the :hover selection on &lt;tr&gt; to highlight table row on mouse over.</li>
+                <code>
+                    tr:hover{background-color:#f5f5f5;}
+                </code>
+            </ul>
+            <ul>
+                <h4>9.striped tables</h4>
+                <li>For zebra striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows</li>
+                <code>
+                    tr:nth-child(even){background-color:#f2f2f2;}
+                </code>
+            </ul>
+            <ul>
+                <h4>10.Responsive Table</h4>
+                <li>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Add a container element(like &lt;div&gt;) with overflow-x :auto around the &lt;tab;e&gt; element to make it responsive</li>
+                <li>&lt;div style="overflow-x:auto;"&gt;</li>
+            </ul>
+            <ul>
+                <h4>Border-spacing</h4>
+                <li>The border spacing property sets the bistance between the border of adjacent cells.</li>
+                <code>
+                    #table1{border-collapse:seprate;
+                     border-spacing:15px;
+                    }
+                </code>
+            </ul>
          </div>
         </section>
     </body>
