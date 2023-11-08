@@ -1,0 +1,90 @@
+.page1 {
+    margin: 3%;
+    border: 2px solid black;
+    padding-left: 20px;
+  }
+
+  .page2 {
+    margin: 3%;
+    border: 1px solid black;
+    padding-left: 20px;
+  }
+
+  .page2 table,
+  th,
+  td {
+    border: 1px solid black;
+    width: 70%;
+    border-collapse: collapse;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Fonts {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .page3 {
+    margin: 3%;
+    border: 1px solid black;
+    padding-left: 20px;
+  }
+
+  .text-col {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .face {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .attri {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .page4 {
+    margin: 3%;
+    border: 1px solid black;
+    padding-left: 20px;
+  }
+
+  .text-align {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .page4 table,
+  th,
+  td {
+    border: 1px solid black;
+    width: 70%;
+    border-collapse: collapse;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .page5 {
+    margin: 3%;
+    border: 1px solid black;
+    padding-left: 20px;
+  }
+
+  .page6 {
+    margin: 3%;
+    border: 1px solid black;
+    padding-left: 20px;
+  }
+
+  .page7 {
+    margin: 3%;
+    border: 1px solid black;
+    padding-left: 20px;
+  }
