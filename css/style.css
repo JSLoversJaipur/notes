@@ -24,6 +24,7 @@ td {
 
 
 
+
 .text-col {
   border: 1px solid black;
   width: 50%;
@@ -104,6 +105,10 @@ td {
   width: 50%;
 }
 .checkboxes{
+  border: 1px solid black;
+  width: 50%;
+}
+.frames{
   border: 1px solid black;
   width: 50%;
 }
