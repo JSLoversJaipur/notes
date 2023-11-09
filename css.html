@@ -1140,6 +1140,131 @@
                 <li>The rotateZ() method:- The rotateZ() method rotates an element around it's Z-axis at a given degree: Example:-#myDiv{transform:rotateZ(150deg);}
                 </li>
             </ul>
+            <ul>
+                <h4>Forms</h4>
+                <li>Styling input field</li>
+                <li>use the width property to determine the width of the input field:</li>
+                <li>input{width:100%;}</li>
+                <p>If you only want to style a specific input type you can use attribute selector</p>
+                <li>input[type=text]-will only select text field</li>
+                <li>input[type=password]-will only select password field</li>
+                <li>input[type=number]-will only select number field</li>
+            </ul>
+            <ul>
+                <h4>Focused input:-</h4>
+                <li>By default,some browsers will add a blue outline around the input when it get focus(clicked on) you can remove the behaviour by adding outline:none; to the input</li>
+                <li>use the :focus selector to do something with the input field when it gets focus:</li>
+                <code>
+                    input[type=text]:focus{background-color:lightblue;}
+                </code>
+            </ul>
+            <ul>
+                <h4>Input with icon/image:-</h4>
+                <li>If you want an icon inside the input, use the background image property and position it with the background position property. Also notice that we add a large left padding to reserve the space of the icon:</li>
+                <code>
+                    input[type=text]:focus{background-color:lightblue; background-image:url("searchicon.png");
+                background-position:10px 10px; background-repeat:no-repeat; padding-left:40px;}
+                </code>
+            </ul>
+        </div>
+    </section>
+    <section class="border-image">
+        <div>
+            <h2>Border-image property</h2>
+            <ul>
+                <li>The CSS border image property allow you to specify an image to be used instead of a normal border around an element.</li>
+                <li>The property has three parts:</li>
+                <li>The image to use as a border</li>
+                <li>Where to slice the image</li>
+                <li>Defines wether the middle section should be repeated or streached</li>
+            </ul>
+            <ul>
+                <h4>Repeated border image</h4>
+                <code>
+                #bordering{border:10px solid transparent; padding 15px; border-image:url("border.png") 30round;}
+            </code>
+            </ul>
+            <ul>
+                <h4>Streched border image</h4>
+                <code>
+                #bordering{border:10px solid transparent; padding 15px; border-image:url("border.png") 30stretch;}
+            </code>
+            </ul>
+            <ul>
+                <h4>Box-shadow</h4>
+                <li>The css box-shadow property applies shadow to the element</li>
+                <code>
+                div{box-shadow:10px 10px 10px grey;}
+            </code>
+            </ul>
+            <ul>
+                <h2>CSS Transition</h2>
+                <li>To create a transition effect,you must specify two things:</li>
+                <li>the CSS property you want to add an effect to</li>
+                <li>the duration of the effect</li>
+                <code>
+                div { width:100px; height:100px; background:red; transition:width 2s;}
+                div:hover{width:300px;}
+            </code>
+            </ul>
+            <ul>
+                <h4>Transition timing function</h4>
+                <li>Ease:-specifies the transition effect with a slow start, then fast, then end slowly(this is default)</li>
+                <li>Linear:-Specifies a transition effect with the same speed from start to end </li>
+                <li>Ease-in:- specifies a transition effect with a slow start</li>
+                <li>Ease-out:-specifes a transition effect with a slow end</li>
+                <li>Ease-in-out:- specefies a transition effect with slow start and end </li>
+            </ul>
+            <ul>
+                <h4>Transition delay</h4>
+                <li>The transition delay property specefies a delay(in second) for the transition effect</li>
+                <code>
+                div{transition-delay:1s;}
+            </code>
+            </ul>
+            <ul>
+                <h4>Transition + Transformation</h4>
+                <code>
+                div{transition:width 2s, height 2s, transform 2s;}
+            </code>
+            </ul>
+        </div>
+    </section>
+    <section class="css animation">
+        <div>
+            <ul>
+                <li>An animation lets an element gradually change from one style to another</li>
+                <p>1. The @Keyframes rule:- When you specify the CSS style inside the @Keyframe rule, the animation will gradually change from the current style to the new style at certain times.</p>
+                <code>
+            {from{background-color:red;}
+             to{background-color:yellow;}
+            }
+        </code>
+            </ul>
+            <ul>
+                <p>2.Animation-duration:- The Animation-duration property defines how long time an animation should take to complete.</p>
+                <code>
+            div{ width:100px; height:100px; position:relative; background-color:red;
+            animation-name: example; animation-duration:4s;}
+        </code>
+            </ul>
+            <ul>
+                <p>3.Animation-delay:-The Animation-delay property specifies a delay for the start of the animation</p>
+                <code>
+            div{ width:100px; height:100px; position:relative; background-color:red;
+            animation-name: example; animation-duration:4s; Animation-delay:2s;}
+        </code>
+            </ul>
+            <ul>
+                <p>4. Animation-iteration-count:- The Animation-iteration-count property specifies the number of times an animation should run</p>
+                <code>
+            div{ width:100px; height:100px; position:relative; background-color:red;
+            animation-name: example; animation-duration:4s; animation-delay:2s; Animation-iteration-count:3;}
+        </code>
+            </ul>
+            <ul>
+                <p>5. Aniamtion-dirction</p>
+            </ul>
         </div>
     </section>
 </body>
