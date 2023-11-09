@@ -1,3 +1,4 @@
+/*Nakul*/
 .page {
   margin: 3%;
   border: 2px solid black;
@@ -59,7 +60,10 @@ td {
   align-items: center;
 }
 
-
+.box{
+  border: 1px solid black;
+  width: 50%;
+}
 .table-box {
   border: 1px solid black;
   width: 50%;
@@ -119,25 +123,18 @@ td {
   border: 1px solid black;
   width: 50%;
 }
-
 .frames {
   border: 1px solid black;
   width: 50%;
+}
+/*jatin*/
 
-  section {
-    padding: 5px;
-    border: 3px solid black;
-    padding: 8px;
-    margin: 10px;
-    line-height: 40px;
-  }
+
+  
 
   code {
     font-size: 22px;
-    border: 3px solid black;
-    margin: 22px;
-    padding: 9px;
-    line-height: 40px;
+   
   }
 
   p {
