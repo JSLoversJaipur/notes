@@ -58,15 +58,17 @@
             </ul>
             <h4>4. Grouping</h4>
             <ul>
-                <li>The grouping selector select all the HTML element with same style definations</li>
-                <code>h1, h2, p {text-align:center; color:red;}</code>
+                <li>The grouping selector select all the HTML element with same style definations
+                    <p class="box"><code>h1, h2, p {text-align:center; color:red;}</code></p>
+                </li>
+
             </ul>
             <h4>5. Universal selector</h4>
             <ul>
 
                 <li>the universal selector (*) select all the HTML elements on the page.</li>
-                <code>*{text-align:center;
-                    colr:red;}</code>
+                <p class="box"><code>*{text-align:center;
+                        colr:red;}</code></p>
             </ul>
         </div>
         <p class="foot">Page 1</p>
@@ -286,10 +288,14 @@
                     <li>background-image</li>
                     <li>background-rtepeat</li>
                     <li>background-attachment</li>
-                    <li>background-position</li>
-                    <code>body{
-                        background:#ffffff url("img_tree.png")no-repeat right-top;
-                        }</code>
+                    <li>background-position
+                        <p class="box">
+                            <code>body{
+                                background:#ffffff url("img_tree.png")no-repeat right-top;
+                                }</code>
+                        </p>
+                    </li>
+
                 </ul>
         </div>
         <p class="foot">Page 3</p>
@@ -558,8 +564,10 @@
                 </li>
 
                 <li>Font size with em:- 1em is equal to the current font sizw. The default text size in browsers is
-                    16px.</li>
-                <code>h1{font-size:2.5em; /*40px/16-2.5em*/}</code>
+                    16px.
+                    <p class="box"> <code>h1{font-size:2.5em; /*40px/16-2.5em*/}</code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>6. Font-stretch</h4>
@@ -969,7 +977,7 @@
     <section class="page">
         <div>
             <ul>
-                <h4>1.Table borders</h4>
+                <h4>1. Table borders</h4>
                 <li>To specifies the table borders in css, use the border property.
                     <p class="box"><code>
                             table,th,td{border:1px solid black;}
@@ -978,99 +986,127 @@
                 </li>
             </ul>
             <ul>
-                <h4>2.collapse table borders</h4>
+                <h4>2. Collapse table borders</h4>
                 <li>To specifies the border collapse property set wether the table border should be collapsed into a
-                    single border</li>
-                <code>
-                    table{border-collapse:collapse;}
-                    table,th,td{border:1px solid black;}
-                </code>
+                    single border
+                    <p class="box">
+                        <code>
+                            table{border-collapse:collapse;}
+                            table,th,td{border:1px solid black;}
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
-                <h4>3.Table width and height</h4>
-                <li>Width and height of the table are defined by the width and height properties.</li>
-                <code>
-                    table{width:100%;}
-                    th{height:50px;}
-                </code>
+                <h4>3. Table width and height</h4>
+                <li>Width and height of the table are defined by the width and height properties.
+                    <p class="box"> <code>
+                            table{width:100%;}
+                            th{height:50px;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>4.Horizontal alignment</h4>
+                <h4>4. Horizontal alignment</h4>
                 <li>The text align property sets the horizontal alignment(likeleft,right,or center) of the content in
-                    &lt;th&gt; or &lt;td&gt;.</li>
-                <code>
-                    th{text-align:left;}
-                </code>
+                    &lt;th&gt; or &lt;td&gt;.
+                    <p class="box">
+                        <code>
+                            th{text-align:left;}
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
-                <h4>5.Vertical alignment</h4>
+                <h4>5. Vertical alignment</h4>
                 <li>The vertical align property sets the vertical alignment (like top,bottom,or middle) of the content
-                    in &lt;th&gt; or &lt;td&gt;.</li>
-                <code>
-                    td{height:50px; vertical-align:bottom;}
-                </code>
+                    in &lt;th&gt; or &lt;td&gt;.
+                    <p class="box">
+                        <code>
+                            td{height:50px; vertical-align:bottom;}
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
-                <h4>6.Table padding</h4>
+                <h4>6. Table padding</h4>
                 <li>To control the space between the border and the content in a table, use the padding property on the
-                    &lt;th&gt; and &lt;td&gt; element:</li>
-                <code>
-                    th,td{padding:15px;
-                    text-align:left;}
-                </code>
+                    &lt;th&gt; and &lt;td&gt; element:
+                    <p class="box"> <code>
+                            th,td{padding:15px;
+                            text-align:left;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>7.Horizontal Dividers</h4>
-                <li>Add the border-bottom property to &lt;th&gt; or &lt;td&gt; for horizontal dividers:</li>
-                <code>
-                    th,td{border-bottom:1px solid #ddd;}
-                </code>
+                <h4>7. Horizontal Dividers</h4>
+                <li>Add the border-bottom property to &lt;th&gt; or &lt;td&gt; for horizontal dividers:
+                    <p class="box"> <code>
+                            th,td{border-bottom:1px solid #ddd;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>*.Hoverable table</h4>
-                <li>Use the :hover selection on &lt;tr&gt; to highlight table row on mouse over.</li>
-                <code>
-                    tr:hover{background-color:#f5f5f5;}
-                </code>
+                <h4>8. Hoverable table</h4>
+                <li>Use the :hover selection on &lt;tr&gt; to highlight table row on mouse over.
+                    <p class="box"> <code>
+                            tr:hover{background-color:#f5f5f5;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>9.striped tables</h4>
+                <h4>9. striped tables</h4>
                 <li>For zebra striped tables, use the nth-child() selector and add a background-color to all even (or
-                    odd) table rows</li>
-                <code>
-                    tr:nth-child(even){background-color:#f2f2f2;}
-                </code>
+                    odd) table rows
+                    <p class="box"> <code>
+                            tr:nth-child(even){background-color:#f2f2f2;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>10.Responsive Table</h4>
+                <h4>10. Responsive Table</h4>
                 <li>A responsive table will display a horizontal scroll bar if the screen is too small to display the
                     full content. Add a container element(like &lt;div&gt;) with overflow-x :auto around the
                     &lt;tab;e&gt; element to make it responsive</li>
                 <li>&lt;div style="overflow-x:auto;"&gt;</li>
             </ul>
             <ul>
-                <h4>11.Border-spacing</h4>
-                <li>The border spacing property sets the bistance between the border of adjacent cells.</li>
-                <code>
-                    #table1{border-collapse:seprate;
-                    border-spacing:15px;
-                    }
-                </code>
+                <h4>11. Border-spacing</h4>
+                <li>The border spacing property sets the bistance between the border of adjacent cells.
+                    <p class="box"><code>
+                            #table1{border-collapse:seprate;
+                            border-spacing:15px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>12.Caption-side</h4>
-                <li>The caption side proprty specifies the placement of the table caption</li>
-                <code>
-                    #example1{caption-side:bottom;}
-                </code>
+                <h4>12. Caption-side</h4>
+                <li>The caption side proprty specifies the placement of the table caption
+                    <p class="box"><code>
+                            #example1{caption-side:bottom;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>13.Empty-cells</h4>
+                <h4>13. Empty-cells</h4>
                 <li>The empty cells property sets wether or not to display border on empty cells in the table.This
-                    property has no effect if border-collapse is "collapse"</li>
-                <code>
-                    table{empty-cells:hide;}
-                </code>
+                    property has no effect if border-collapse is "collapse"
+                    <p class="box"> <code>
+                            table{empty-cells:hide;}
+                        </code></p>
+                </li>
+
             </ul>
             <h2>Display property</h2>
             <ul>
@@ -1086,10 +1122,12 @@
                 <h4>Display value</h4>
                 <li>None:-is commonly used with javascript to hide and show element without deleting and recreating them
                 </li>
-                <li>Inline:-A common example is making inline &lt;li&gt; element for horizontal menus;</li>
-                <code>
-                    li{display:inline;}
-                </code>
+                <li>Inline:-A common example is making inline &lt;li&gt; element for horizontal menus;
+                    <p class="box"> <code>
+                            li{display:inline;}
+                        </code></p>
+                </li>
+
             </ul>
             <h2>Position property</h2>
             <ul>
@@ -1101,50 +1139,64 @@
                 <li>Sticky</li>
             </ul>
             <ul>
-                <h4>1.Position:static;</h4>
-                <li>static positioned element are not affected by the top,bottom,left, and right properties</li>
-                <code>
-                    div.static{position:static; border:3px solid #73AD21;}
-                </code>
+                <h4>1. Position:static;</h4>
+                <li>static positioned element are not affected by the top,bottom,left, and right properties
+                    <p class="box"> <code>
+                            div.static{position:static; border:3px solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>2.Position:relative;</h4>
-                <li>An element with position:relative; is positioned relative to its normal position</li>
-                <code>
-                    div.Relative{position:relative; border:3px solid #73AD21;}
-                </code>
+                <h4>2. Position:relative;</h4>
+                <li>An element with position:relative; is positioned relative to its normal position
+                    <p class="box"><code>
+                            div.Relative{position:relative; border:3px solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>3.Position:Fixed;</h4>
+                <h4>3. Position:Fixed;</h4>
                 <li>An element with position:fixed; is positioned relative to viewport, which means it always stay in
-                    the same place even if the page is scrolled.</li>
-                <code>
-                    div.fixwd{position:fixed; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
-                </code>
+                    the same place even if the page is scrolled.
+                    <p class="box"><code>
+                            div.fixwd{position:fixed; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>4.Position:absolute;</h4>
-                <li>An element with position:absolute; is positioned relative to the nearest positional ancestor</li>
-                <code>
-                    div.absolute{position:absolute; top:80px; height:100px; bottom:0; width:300px; right:0; border:3px
-                    solid #73AD21;}
-                </code>
+                <h4>4. Position:absolute;</h4>
+                <li>An element with position:absolute; is positioned relative to the nearest positional ancestor
+                    <p class="box"><code>
+                            div.absolute{position:absolute; top:80px; height:100px; bottom:0; width:300px; right:0;
+                            border:3px
+                            solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>5.position:sticky;</h4>
-                <li>An element with position:sticky; is positioned based on user scroll position.</li>
-                <code>
-                    div.sticky{position:-webkit-sticky; /*safari*/ position:sticky; top:0;n background-color:green;
-                    border:2px solid #4CAF50}
-                </code>
+                <h4>5. position:sticky;</h4>
+                <li>An element with position:sticky; is positioned based on user scroll position.
+                    <p class="box"> <code>
+                            div.sticky{position:-webkit-sticky; /*safari*/ position:sticky; top:0;n
+                            background-color:green;
+                            border:2px solid #4CAF50}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>6.overlapping element</h4>
+                <h4>6. overlapping element</h4>
                 <li>The z-index property specifies the stack order of an element (which element should be placed in
-                    front of, or behind,the others).</li>
-                <code>
-                    img{position:absolute; left:0; top:0; z-index:-1;}
-                </code>
+                    front of, or behind,the others).
+                    <p class="box"><code>
+                            img{position:absolute; left:0; top:0; z-index:-1;}
+                        </code></p>
+                </li>
+
             </ul>
         </div>
         <p class="foot">Page 6</p>
@@ -1179,39 +1231,43 @@
                 </table>
                 <h4>overflow-x and overflow-y</h4>
                 <li>The overflow-x and overflow-y property specefies wether to change the overflow of content to just
-                    horizontally or vertyically.</li>
-                <code>
-                    div{overflow-x:hidden;
-                    overflow-y:scroll;}
-                </code>
+                    horizontally or vertyically.
+                    <p class="box"><code>
+                            div{overflow-x:hidden;
+                            overflow-y:scroll;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>Float</h4>
                 <li>The float property is used for positioning and formatting e.g let an image float to the text in a
-                    container</li>
-                <table>
-                    <tr>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>left</td>
-                        <td>the element float to the left of its container</td>
-                    </tr>
-                    <tr>
-                        <td>right</td>
-                        <td>the element float to the right side of the container</td>
-                    </tr>
-                    <tr>
-                        <td>none</td>
-                        <td>The element does not float(will be displayed just where it occur in the text). This is
-                            default</td>
-                    </tr>
-                    <tr>
-                        <td>inherit</td>
-                        <td>The element inherit the float value of its parent</td>
-                    </tr>
-                </table>
+                    container
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>left</td>
+                            <td>the element float to the left of its container</td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td>the element float to the right side of the container</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td>The element does not float(will be displayed just where it occur in the text). This is
+                                default</td>
+                        </tr>
+                        <tr>
+                            <td>inherit</td>
+                            <td>The element inherit the float value of its parent</td>
+                        </tr>
+                    </table>
+                </li>
+
             </ul>
             <ul>
                 <h4>Clear</h4>
@@ -1243,9 +1299,9 @@
             <ul>
                 <h4>Opacity</h4>
                 <p>The opacity property can take a value from 0.0-1.0 The lower value the more transparent</p>
-                <code>
-                    img{opacity:0.5;}
-                </code>
+                <p class="box"><code>
+                        img{opacity:0.5;}
+                    </code></p>
             </ul>
         </div>
     </section>
@@ -1253,15 +1309,15 @@
         <div>
             <ul>
                 <h4>Horizontal navigation bar(Menu bar)</h4>
-                <code>
-                    ul{list-style-type:none; margin:0;
-                    padding:0; overflow:hidden; background-color:#333;}
+                <p class="box"> <code>
+                        ul{list-style-type:none; margin:0;
+                        padding:0; overflow:hidden; background-color:#333;}
 
-                    li{float:left;}
+                        li{float:left;}
 
-                    li a{display:block; color:white; text-align:center;
-                    padding:14px 16px; text-decoration:none;}
-                </code>
+                        li a{display:block; color:white; text-align:center;
+                        padding:14px 16px; text-decoration:none;}
+                    </code></p>
             </ul>
             <ul>
                 <h2>CSS Transform</h2>
