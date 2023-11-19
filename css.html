@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="definations">
+    <section class="page">
 
         <h1>CSS(cascading style sheet)</h1>
         <div>
@@ -24,45 +24,57 @@
         <div>
             <h4>CSS syntax</h4>
             <p>A css rule-set consist of a selector and a declaration black:</p>
-            <code>h1 {color(property):blue(value); font-size:12px;}</code>
+            <p class="box"> <code>h1 {color(property):blue(value); font-size:12px;}</code></p>
+
         </div>
         <div>
             <h1>CSS selector</h1>
             <h4>1. Type selector</h4>
             <ul>
-                <li>A type selector is a name of HTML tag</li>
-                <code>p{text-align:center;color:red;}</code>
+                <li>A type selector is a name of HTML tag
+                    <p class="box"> <code>p{text-align:center;color:red;}</code></p>
+                </li>
+
+
                 <li>the rule applies to all &lt;p&gt; tags in document</li>
             </ul>
-            <h4>2.ID selector</h4>
+            <h4>2. ID selector</h4>
             <ul>
                 <li>The id selector uses the id attribute of an html element to select a specific element</li>
-                <li>To select an element with speific id, write a hash(#) character, followed by the id of the element</li>
-                <code>#para1{text-align:center;color:red;}</code>
-                <li>An id name start with a number!</li>
+                <li>To select an element with speific id, write a hash(#) character, followed by the id of the element
+                    <p class="box"> <code>#para1{text-align:center;color:red;}</code></p>
+                </li>
+
+                <li>An id name can't start with a number!</li>
             </ul>
+            <h4>3. Class selector</h4>
             <ul>
-                <h4>3.class selector</h4>
                 <li>The class selector select html element with a specific class attribute.</li>
-                <li>to select element with a specific class, write a period (.) characte , followed by the class name.</li>
-                <code>.center {text-align:center; color:red;}</code>
+                <li>to select element with a specific class, write a period (.) characte , followed by the class name.
+                    <p class="box"> <code>#para1{text-align:center;color:red;} center {text-align:center;
+                            color:red;}</code></p>
+
+                </li>
             </ul>
+            <h4>4. Grouping</h4>
             <ul>
-                <h4>4.Grouping</h4>
-                <li>The grouping selector select all the HTML element with same style definations</li>
-                <code>h1, h2, p {text-align:center; color:red;}</code>
+                <li>The grouping selector select all the HTML element with same style definations
+                    <p class="box"><code>h1, h2, p {text-align:center; color:red;}</code></p>
+                </li>
+
             </ul>
+            <h4>5. Universal selector</h4>
             <ul>
-                <h4>5.Universal selector</h4>
+
                 <li>the universal selector (*) select all the HTML elements on the page.</li>
-                <code>*{text-align:center; 
-                        colr:red;}</code>
+                <p class="box"><code>*{text-align:center;
+                        colr:red;}</code></p>
             </ul>
         </div>
         <p class="foot">Page 1</p>
     </section>
     <br>
-    <section class="adding">
+    <section class="page">
         <div>
             <p>there are three ways of inserting a style sheet</p>
             <ul>
@@ -72,66 +84,93 @@
             </ul>
         </div>
         <div>
-            <h4>1.External CSS</h4>
+            <h4>1. External CSS</h4>
             <ul>
-                <li>With an external style sheet. you can change the look of na entrire website by changing just one file!</li>
-                <li>style sheet files are imported to HTML documents by &lt;link&gt;</li>
-                <code> 
-                    &lt;head&gt; </br>
-                        &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; <br>
-                    &lt;/head&gt;<br><br>
-                    
-                    "mystyle.css"<br>
-                    body{background-color:lightblue;}<br>
-                    h1{color:navy; margin-left:40px;}<br>
-                </code>
+                <li>With an external style sheet. you can change the look of na entrire website by changing just one
+                    file!</li>
+                <li>style sheet files are imported to HTML documents by &lt;link&gt;
+                    <p class="box">
+                        <code>
+                            &lt;head&gt; <br>
+                            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; <br>
+                            &lt;/head&gt;<br><br>
+
+                            "mystyle.css"<br>
+                            body{background-color:lightblue;}<br>
+                            h1{color:navy; margin-left:40px;}<br>
+                        </code>
+                    </p>
+
+
+                </li>
+
             </ul>
-            <h4>2.Internal CSS</h4>
+            <h4>2. Internal CSS</h4>
             <ul>
                 <li>An internal style sheet may be used if one single HTML page has a unique style.</li>
-                <li>You can put style sheet rules in the head of the document by &lt;style &gt;</li>
-                <code> &lt;head &gt;<br> &lt;style &gt;<br>body{background-color:linen;}<br>h1{color:maroon; margin-left:40px;}<br>< /style> <br>< /head ></code>
-            </ul>
-            <h4>3.Inline CSS</h4>
-            <ul>
-                <li>An inline style may be used to apply a unique style for a singl element</li>
-                <li>The start tag can contain style sheet rules directly in HTML documents by the style attribute</li>
-                <code> &lt;body&gt;<br>
-                    &lt;h1 style="color:blue; text-align:center;"&gt;This is a heading  &lt;/h1&gt;
-                     &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
-                    &lt;/body&gt;</code>
-            </ul>
-            <ul>
-                <h4>CSS comments</h4>
-                <li>comments are used to explain the code,and may help when you edit the code on the later date.</li>
-                <li>A CSS comment is placed inside the element, and start with / * and ends with */:</li>
-                <code> &lt;style&gt;
-                    / * this is a single-line comment */p {color:red;}
-                     &lt;/style&gt;</code>
-            </ul>
+                <li>You can put style sheet rules in the head of the document by &lt;style &gt;
+
+                    <p class="box"> <code> &lt;head &gt;<br> &lt;style
+                            &gt;<br>body{background-color:linen;}<br>h1{color:maroon; margin-left:40px;}<br>
+                            < /style> <br>
+                                < /head> </code> </p> </li> </ul> <h4>3. Inline CSS</h4>
+                                    <ul>
+                                        <li>An inline style may be used to apply a unique style for a singl element</li>
+                                        <li>The start tag can contain style sheet rules directly in HTML documents by
+                                            the style attribute
+                                            <p class="box"><code> &lt;body&gt;<br>
+                                                    &lt;h1 style="color:blue; text-align:center;"&gt;This is a heading
+                                                    &lt;/h1&gt;
+                                                    &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+                                                    &lt;/body&gt;</code>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <h4>CSS comments</h4>
+                                        <li>comments are used to explain the code,and may help when you edit the code on
+                                            the later date.</li>
+                                        <li>A CSS comment is placed inside the element, and start with / * and ends with
+                                            */:
+                                            <p class="box">
+                                                <code> &lt;style&gt;
+                                                    / * this is a single-line comment */p {color:red;}
+                                                    &lt;/style&gt;
+                                                </code>
+                                            </p>
+                                        </li>
+                                    </ul>
         </div>
+        <p class="foot">Page 1</p>
     </section>
     <br>
-    <section class="background">
+    <section class="page">
         <div>
             <h1>Background properties</h4>
                 <ul>
-                    <h4>1.background-color</h4>
-                    <li>The background-color property specifies the background color of an element</li>
-                    <code>h1{background-color:green;}</code>
-                    <li>opacity/transparency:- The opacity property specifies the opacity/transparency of an element.it can take a value from 0.0-1.0</li>
-                    <code>p{
-                        background-color:green;
-                        opacity:0.3;} </code>
+                    <h4>1. background-color</h4>
+                    <li>The background-color property specifies the background color of an element <p class="box">
+                            <code>h1{background-color:green;}</code></p>
+                    </li>
+
+                    <li>opacity/transparency:- The opacity property specifies the opacity/transparency of an element.it
+                        can take a value from 0.0-1.0
+                        <p class="box"> <code>p{
+                                background-color:green;
+                                opacity:0.3;} </code></p>
+                    </li>
+
                 </ul>
                 <ul>
-                    <h4>2.background-image</h4>
-                    <li>The background-image property specifies an image to use as the background of the element</li>
-                    <code>Example:
-                         body{background-image:url("paper.gif"):}</code>
+                    <h4>2. background-image</h4>
+                    <li>The background-image property specifies an image to use as the background of the element
+                        <p class="box"> <code>Example:
+                                body{background-image:url("paper.gif"):}</code></p>
+                    </li>
+
                 </ul>
                 <ul>
-                    <h4>3.background-repeat </h4>
+                    <h4>3. background-repeat </h4>
                     <li>sets how a background image will be repeated</li>
                 </ul>
                 <table>
@@ -157,39 +196,49 @@
                     </tr>
                 </table>
                 <br>
-                <code>body{background-image:url("gradient_bg.png");
-                    background-repeat:repeat-x;} </code>
+                <p class="box"> <code>body{background-image:url("gradient_bg.png");
+                        background-repeat:repeat-x;} </code></p>
                 <ul>
-                    <h4>4.background-position</h4>
-                    <li>The background-position property is used to specify the position of the background-image.</li>
-                    <code>body{
-                        background-image:url("img_tree.png");
-                        background-repeat:no-repeat;
-                        background-position:right-top;    
-                        }</code>
+                    <h4>4. background-position</h4>
+                    <li>The background-position property is used to specify the position of the background-image.
+                        <p class="box"> <code>body{
+                                background-image:url("img_tree.png");
+                                background-repeat:no-repeat;
+                                background-position:right-top;
+                                }</code></p>
+                    </li>
+
                 </ul>
                 <ul>
-                    <h4>5.background-attachment</h4>
-                    <li>The background-attachment property specifies wether the background image should scroll or to be fixed</li>
-                    <code style="border: 3px solid black;">body{
-                            background-image:url("img_tree.png");
-                            background-repeat:no-repeat;
-                            background-position:right-top;
-                            background-attachment:fixed;    
-                            }</code>
+                    <h4>5. background-attachment</h4>
+                    <li>The background-attachment property specifies wether the background image should scroll or to be
+                        fixed
+                        <p class="box"> <code>body{
+                                background-image:url("img_tree.png");
+                                background-repeat:no-repeat;
+                                background-position:right-top;
+                                background-attachment:fixed;
+                                }</code></p>
+                    </li>
+
                 </ul>
                 <ul>
-                    <h4>6.background-size</h4>
+                    <h4>6. background-size</h4>
                     <li>specifies the size of the background images.</li>
-                    <code style="border: 3px solid black;">body{
+                    <p class="box">
+                        <code>body{
                             background-image:url("img_tree.png");
                             background-repeat:no-repeat;
                             background-position:right-top;
                             background-attachment:fixed;
-                            background-size:80px 60px;    
+                            background-size:80px 60px;
                             }</code>
-                    <li>Contain: scale the image to the largest size such that both its width and its height can fit inside the content area</li>
-                    <li>Cover: Scale the background image to be as large as possible so that the background area is completely covered by the background image</li>
+                    </p>
+
+                    <li>Contain: scale the image to the largest size such that both its width and its height can fit
+                        inside the content area</li>
+                    <li>Cover: Scale the background image to be as large as possible so that the background area is
+                        completely covered by the background image</li>
                 </ul>
                 <ul>
                     <h4>7.background-origin</h4>
@@ -239,40 +288,50 @@
                     <li>background-image</li>
                     <li>background-rtepeat</li>
                     <li>background-attachment</li>
-                    <li>background-position</li>
-                    <code>body{
-                            background:#ffffff url("img_tree.png")no-repeat right-top;
-                        }</code>
+                    <li>background-position
+                        <p class="box">
+                            <code>body{
+                                background:#ffffff url("img_tree.png")no-repeat right-top;
+                                }</code>
+                        </p>
+                    </li>
+
                 </ul>
         </div>
         <p class="foot">Page 2</p>
+
     </section>
-    <section class="text">
+    <section class="page">
         <div>
             <h3>Text properties</h3>
             <ul>
-                <h4>1.Text color</h4>
-                <li>The color property is used to set the color of the text.The color is specified by:</li>
-                <code>{color:blue;}
-                        h1{color:green;}
-                    </code>
+                <h4>1. Text color</h4>
+                <li>The color property is used to set the color of the text.The color is specified by:
+                    <p class="box"><code>{color:blue;}
+                            h1{color:green;}
+                        </code></p>
+
+                </li>
+
             </ul>
             <ul>
-                <h4>2.Text-allignment</h4>
+                <h4>2. Text-allignment</h4>
                 <li>The text-align property is used to set the horizontal allignment of a text</li>
-                <li>A text can be left or right aligned,centered,or justified</li>
-                <code>h1{text-align:center;}</code>
+                <li>A text can be left or right aligned,centered,or justified
+                    <p class="box"><code>h1{text-align:center;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>3.Vertical-allignment</h4>
+                <h4>3. Vertical-allignment</h4>
                 <li>the vertical-allign property set the vertical allignment of the element</li>
-                <code>img.top{vertical-align:top;}
+                <p class="box"><code>img.top{vertical-align:top;}
                         img.middle{vertical-align:middle;}
                         img.top{vertical-align:top;}
-                    </code>
+                    </code></p>
             </ul>
             <ul>
-                <h4>4.Text-decoration</h4>
+                <h4>4. Text-decoration</h4>
                 <li>The text-decoration property is used to set or remove decoration from the text</li>
                 <li>The value text-decoration:none; is often used to remove underline from the links:</li>
                 <table>
@@ -295,183 +354,231 @@
                 </table>
             </ul>
             <ul>
-                <h4>5.Text transformation</h4>
-                <li>The text-transformation property is used to specify the uppercase and lowercase letters in the text</li>
-                <code>p.uppercase{text-transform:uppercase;}
-                        p.lowercase{text-transform:lowercase;}
-                    </code>
+                <h4>5. Text transformation</h4>
+                <li>The text-transformation property is used to specify the uppercase and lowercase letters in the text
+                    <p class="box"><code>p.uppercase{text-transform:uppercase;}
+                            p.lowercase{text-transform:lowercase;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>6.Text-indentation</h4>
-                <li>The text-indent property is used to specify the indentation of the first line of the text.</li>
-                <code>Example:- p{text-indent:50px;}</code>
+                <h4>6. Text-indentation</h4>
+                <li>The text-indent property is used to specify the indentation of the first line of the text.
+                    <p class="box"><code> p{text-indent:50px;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>7.Letter spacing</h4>
-                <li>The letter-spacing property is used to specift the space between characters in a text</li>
-                <code>Example:-h1{letter-spacing:3px;}</code>
+                <h4>7. Letter spacing</h4>
+                <li>The letter-spacing property is used to specift the space between characters in a text
+                    <p class="box"><code>h1{letter-spacing:3px;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>8.Line Height</h4>
-                <li>The line height property is used to specify the space between the lines:</li>
-                <code>p.small{line-height:0.8;}
-                        p.big{line-height:1.8;}
-                    </code>
+                <h4>8. Line Height</h4>
+                <li>The line height property is used to specify the space between the lines:
+                    <p class="box"><code>p.small{line-height:0.8;}
+                            p.big{line-height:1.8;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>Word spacing</h4>
-                <li>The word spacing property is used to specify the space between the word in a text</li>
-                <code>h1{word-spacing:10px;}</code>
+                <h4>9. Word spacing</h4>
+                <li>The word spacing property is used to specify the space between the word in a text
+
+                    <p class="box"> <code>h1{word-spacing:10px;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>10.White space</h4>
-                <li>The white space property specifies how white space inside an element an is handeled</li>
-                <code>p{white-space:nowrap;}</code>
-                <table>
-                    <tr>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Normal</td>
-                        <td>Default.White space is ignored by the browser</td>
-                    </tr>
-                    <tr>
-                        <td>pre</td>
-                        <td>White-space is preserved by the browser.Acts like the &lt;pre&gt; tag in HTML</td>
-                    </tr>
-                    <tr>
-                        <td>Nowrap</td>
-                        <td>The text will never wrap, it continues on the same line until a &lt;br&gt; tag is used</td>
-                    </tr>
-                </table>
+                <h4>10. White space</h4>
+                <li>The white space property specifies how white space inside an element an is handeled
+                    <p class="box"> <code>p{white-space:nowrap;}</code></p>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>Default.White space is ignored by the browser</td>
+                        </tr>
+                        <tr>
+                            <td>pre</td>
+                            <td>White-space is preserved by the browser.Acts like the &lt;pre&gt; tag in HTML</td>
+                        </tr>
+                        <tr>
+                            <td>Nowrap</td>
+                            <td>The text will never wrap, it continues on the same line until a &lt;br&gt; tag is used
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+
+
             </ul>
             <ul>
-                <h4>11.Text-shadow</h4>
-                <li>The text shadow property add shadow to the text</li>
-                <code>h1{text-shadow:2px 2px;}</code>
-                <li>In its simplest use, you can only specify the horizontal shadow(2px) and the vertical shadow(2px):</li>
-                <li>Text shadow color</li>
-                <code>h1{text-shadow:2px 2px red;}</code>
-                <li>Blur effect to shadow</li>
-                <code>h1{text-shadow:2px 2px 5px red;}</code>
+                <h4>11. Text-shadow</h4>
+                <li>The text shadow property add shadow to the text
+                    <p class="box"><code>h1{text-shadow:2px 2px;}</code></p>
+                </li>
+
+                <li>In its simplest use, you can only specify the horizontal shadow(2px) and the vertical shadow(2px):
+                </li>
+                <li>Text shadow color
+                    <p class="box"> <code>h1{text-shadow:2px 2px red;}</code></p>
+                </li>
+
+                <li>Blur effect to shadow
+                    <p class="box"><code>h1{text-shadow:2px 2px 5px red;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>12.Text overflow</h4>
+                <h4>12. Text overflow</h4>
                 <li>Specifies how overflowed content that is not displayed should be signled to the user</li>
                 <li>clipped:- clip the text</li>
                 <li>Ellipsis:-Render an ellipsis(...) to represent clipped text</li>
             </ul>
             <ul>
-                <h4>13.Word wrapping</h4>
-                <li>The CSS word-wrap property allow long word to be able to broken and wrap onto the next line.</li>
-                <code>&lt;style&gt;
-                        p.test{width:1em; border:1px solid #000000; word-wrap:break-word;}
-                        >&lt;/style&gt;
-                    </code>
+                <h4>13. Word wrapping</h4>
+                <li>The CSS word-wrap property allow long word to be able to broken and wrap onto the next line.
+                    <p class="box"><code>&lt;style&gt; <br>
+                            p.test{ <br> width:1em; <br> border:1px solid #000000; <br> word-wrap:break-word;<br> }
+                            <br> &lt;/style&gt;
+                        </code></p>
+
+                </li>
+
             </ul>
             <ul>
-                <h4>14.Word-breaking</h4>
+                <h4>14. Word-breaking</h4>
                 <li>The CSS word-break property specifies line breaking rules.</li>
                 <li>Keep-all</li>
-                <li>Break-all</li>
-                <code>p.text1{word-break:Keep-all;}</code>
+                <li>Break-all
+                    <p class="box"><code>p.text1{word-break:Keep-all;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>15.Writing mode</h4>
-                <li>Specifies whether the line of text are laid out horizontally or vertically.</li>
-                <code>p.test1{writing-mode:horizontal-tb;}
-                        span.test2{writing-mode:vertical-rl;}
-                    </code>
+                <h4>15. Writing mode</h4>
+                <li>Specifies whether the line of text are laid out horizontally or vertically.
+                    <p class="box"> <code>p.test1{writing-mode:horizontal-tb;}
+                            span.test2{writing-mode:vertical-rl;}
+                        </code></p>
+                </li>
+
             </ul>
         </div>
+        <p class="foot">Page 4</p>
     </section>
-    <section class="Font-properties">
+    <section class="page">
         <div>
             <ul>
-                <h4>1.Font Family</h4>
-                <li>Font-family property is a prioritized list of font family name for an element</li>
-                <code>.serif{font-family:"Times New Roman",Times,serif;}</code>
+                <h4>1. Font Family</h4>
+                <li>Font-family property is a prioritized list of font family name for an element
+                    <p class="box"><code>.serif{font-family:"Times New Roman",Times,serif;}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>2.Font style</h4>
-                <li>set the font style</li>
-                <table>
-                    <tr>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Normal</td>
-                        <td>Default.Display a normal font</td>
-                    </tr>
-                    <tr>
-                        <td>Italic</td>
-                        <td>Display an italic font</td>
-                    </tr>
-                    <tr>
-                        <td>Oblique</td>
-                        <td>Display an Oblique font</td>
-                    </tr>
-                </table>
-                <code>p.normal{font-style:normal;}
-                    p.italic{font-style:italic;}
-                </code>
+                <h4>2. Font style</h4>
+                <li>set the font style
+
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>Default.Display a normal font</td>
+                        </tr>
+                        <tr>
+                            <td>Italic</td>
+                            <td>Display an italic font</td>
+                        </tr>
+                        <tr>
+                            <td>Oblique</td>
+                            <td>Display an Oblique font</td>
+                        </tr>
+                    </table>
+                    <p class="box"> <code>p.normal{font-style:normal;}
+                            p.italic{font-style:italic;}
+                        </code></p>
+                </li>
+
+
             </ul>
             <ul>
-                <h4>3.Font-weight</h4>
-                <li>Specifies the weight of a font</li>
-                <table>
-                    <tr>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Normal</td>
-                        <td>Default.Define normal characters</td>
-                    </tr>
-                    <tr>
-                        <td>Bold/Bolder</td>
-                        <td>Defines thick/thicker characters</td>
-                    </tr>
-                    <tr>
-                        <td>Lighter</td>
-                        <td>Defines lighter character</td>
-                    </tr>
-                    <tr>
-                        <td>100-900(with the intertval of 100)</td>
-                        <td>Defines from thin to thick characters 400 is the same as normal, and 700 is the same as bold</td>
-                    </tr>
-                </table>
-                <code>p.thick{font-weight:bold;}</code>
+                <h4>3. Font-weight</h4>
+                <li>Specifies the weight of a font
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>Default.Define normal characters</td>
+                        </tr>
+                        <tr>
+                            <td>Bold/Bolder</td>
+                            <td>Defines thick/thicker characters</td>
+                        </tr>
+                        <tr>
+                            <td>Lighter</td>
+                            <td>Defines lighter character</td>
+                        </tr>
+                        <tr>
+                            <td>100-900(with the intertval of 100)</td>
+                            <td>Defines from thin to thick characters 400 is the same as normal, and 700 is the same as
+                                bold
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="box"> <code>p.thick{font-weight:bold;}</code></p>
+                </li>
             </ul>
             <ul>
-                <h4>4.Font variant</h4>
+                <h4>4. Font variant</h4>
                 <li>Specifies whether or not a text should be displayed in a small-caps font</li>
-                <li>In a small-caps font, all lowercase letter are converted to uppercase letter. however the converted uppercase letter appears in a smaller font size than the original uppercase letter in the text.</li>
-                <code>p.small{
-                font-variant:small-caps;  
-                }</code>
+                <li>In a small-caps font, all lowercase letter are converted to uppercase letter. however the converted
+                    uppercase letter appears in a smaller font size than the original uppercase letter in the text.
+                    <p class="box"> <code>p.small{
+                            font-variant:small-caps;
+                            }</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>5.font-size</h4>
+                <h4>5. Font Size</h4>
                 <li>Sets the size of the text</li>
-                <li>Font size with the pixels</li>
-                <code>h1{
-                    font-size:40px;
-                }
-                </code>
-                <li>Font size with em:- 1em is equal to the current font sizw. The default text size in browsers is 16px.</li>
-                <code>h1{font-size:2.5em; /*40px/16-2.5em*/}</code>
+                <li>Font size with the pixels
+                    <p class="box"><code>h1{
+                            font-size:40px;
+                            }
+                        </code></p>
+                </li>
+
+                <li>Font size with em:- 1em is equal to the current font sizw. The default text size in browsers is
+                    16px.
+                    <p class="box"> <code>h1{font-size:2.5em; /*40px/16-2.5em*/}</code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>6.Font-stretch</h4>
+                <h4>6. Font-stretch</h4>
                 <li>the font stretch property allow you to make text narrower(condensed) or wider(expanded).</li>
                 <h3>Responsive font size</h3>
                 <li>the text sizer can be set with a VW unit, which means the "Viewport width"</li>
                 <li>That way the text size will follow the size of the browser window.</li>
                 <h3>Font shorthand</h3>
-                <li>to shorthand the code, it is also possible to specify all the individual font properties in one property</li>
+                <li>to shorthand the code, it is also possible to specify all the individual font properties in one
+                    property</li>
                 <li>font-style</li>
                 <li>font-variant</li>
                 <li>font-weight</li>
@@ -497,7 +604,7 @@
             </ul>
             <ul>
                 <h3>List properties</h3>
-                <h4>1.list-style-type</h4>
+                <h4>1. list-style-type</h4>
                 <li>specifies the type of list item</li>
                 <table>
                     <tr>
@@ -535,13 +642,15 @@
                 </table>
             </ul>
             <ul>
-                <h4>2.List-style-Image</h4>
-                <li>specifies an image as the list item maker</li>
-                <code>
-                    ul{
-                        list-style-image:url("sqpurple.gif");
-                    }
-                </code>
+                <h4>2. List-style-Image</h4>
+                <li>specifies an image as the list item maker
+                    <p class="box"><code>
+                            ul{
+                            list-style-image:url("sqpurple.gif");
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>List-style-position</h4>
@@ -549,152 +658,175 @@
                 <li>list-style-position:outside;-means that the bullet point will be outside the list item</li>
                 <li>list-style-position:inside;-means that the bullet point will be inside the list item</li>
                 <h3>Removing default settings</h3>
-                <code>ul{list-style-type:none; margin:0; padding:0;}</code>
+                <p class="box"><code>ul{list-style-type:none; margin:0; padding:0;}</code></p>
             </ul>
             <ul>
                 <h4>list-shorthand</h4>
-                <li>it nis used to set all the list properties in one declaration:</li>
-                <code>ul{list-style:square inside url("sqpurple.gif");}</code>
+                <li>it nis used to set all the list properties in one declaration:
+                    <p class="box"><code>ul{list-style:square inside url("sqpurple.gif");}</code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>Height</h4>
                 <li>used to set the height of the element.</li>
-                <li>Height value:-auto,length,%,initial,inherit</li>
-                <code>
-                div{
-                    height:200px;
-                }
-            </code>
+                <li>Height value:-auto,length,%,initial,inherit
+                    <p class="box"><code>
+                            div{
+                            height:200px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>width</h4>
                 <li>used to set the width of the element</li>
-                <li>Height value:-auto,length,%,initial,inherit</li>
-                <code>
-                div{
-                    width:200px;
-                }
-            </code>
+                <li>Height value:-auto,length,%,initial,inherit
+                    <p class="box">
+                        <code>
+                            div{
+                            width:200px;
+                            }
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
                 <h4>Max-width</h4>
                 <li>set maxwidth of the element</li>
-                <li>Height value:-auto,length,%,initial,inherit</li>
-                <code>
-                div{
-                 max-width:200px;
-                }
-            </code>
+                <li>Height value:-auto,length,%,initial,inherit
+                    <p class="box"> <code>
+                            div{
+                            max-width:200px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>Max-Height</h4>
                 <li>set max-height of the element.</li>
-                <li>Height value:-auto,length,%,initial,inherit</li>
-                <code>
-                div{
-                    Max-height:200px;
-                }
-            </code>
+                <li>Height value:-auto,length,%,initial,inherit
+                    <p class="box"><code>
+                            div{
+                            Max-height:200px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>Min-Height</h4>
                 <li>set min-height of the element.</li>
-                <li>Height value:-auto,length,%,initial,inherit</li>
-                <code>
-                div{
-                    Min-height:200px;
-                }
-            </code>
+                <li>Height value:-auto,length,%,initial,inherit
+                    <p class="box"><code>
+                            div{
+                            Min-height:200px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h2>Border properties</h2>
                 <h4>1.Border Style</h4>
-                <li>set the value of the four borders.</li>
-                <table>
-                    <tr>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>none</td>
-                        <td>Defines no border</td>
-                    </tr>
-                    <tr>
-                        <td>Hidden</td>
-                        <td>Defines a hidden border</td>
-                    </tr>
-                    <tr>
-                        <td>Dotted</td>
-                        <td>Defines a dotted border</td>
-                    </tr>
-                    <tr>
-                        <td>Dashed</td>
-                        <td>Defines a dashed border</td>
-                    </tr>
-                    <tr>
-                        <td>Solid</td>
-                        <td>Defines a solid border</td>
-                    </tr>
-                    <tr>
-                        <td>Double</td>
-                        <td>Defines a double border</td>
-                    </tr>
-                    <tr>
-                        <td>Groove</td>
-                        <td>Defines a 3D grooved border.The effect depends on the border-color value</td>
-                    </tr>
-                    <tr>
-                        <td>Riged</td>
-                        <td>Defines a 3D rigid border. The effect depend on border color value</td>
-                    </tr>
-                    <tr>
-                        <td>Inset</td>
-                        <td>defines a 3D inset border. The effect depend on border color value</td>
-                    </tr>
-                    <tr>
-                        <td>Outset</td>
-                        <td>Defines a 3D outset border.The effect depend on border-color value</td>
-                    </tr>
-                </table>
-                <code>p.dotted{border-style:dotted;}
-                p.dashed{border-style:dashed;}
-                p.mix{border-style:dotted dashed solid double;}
-            </code>
+                <li>set the value of the four borders.
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td>Defines no border</td>
+                        </tr>
+                        <tr>
+                            <td>Hidden</td>
+                            <td>Defines a hidden border</td>
+                        </tr>
+                        <tr>
+                            <td>Dotted</td>
+                            <td>Defines a dotted border</td>
+                        </tr>
+                        <tr>
+                            <td>Dashed</td>
+                            <td>Defines a dashed border</td>
+                        </tr>
+                        <tr>
+                            <td>Solid</td>
+                            <td>Defines a solid border</td>
+                        </tr>
+                        <tr>
+                            <td>Double</td>
+                            <td>Defines a double border</td>
+                        </tr>
+                        <tr>
+                            <td>Groove</td>
+                            <td>Defines a 3D grooved border.The effect depends on the border-color value</td>
+                        </tr>
+                        <tr>
+                            <td>Riged</td>
+                            <td>Defines a 3D rigid border. The effect depend on border color value</td>
+                        </tr>
+                        <tr>
+                            <td>Inset</td>
+                            <td>defines a 3D inset border. The effect depend on border color value</td>
+                        </tr>
+                        <tr>
+                            <td>Outset</td>
+                            <td>Defines a 3D outset border.The effect depend on border-color value</td>
+                        </tr>
+                    </table>
+                    <p class="box"><code>p.dotted{border-style:dotted;}
+                            p.dashed{border-style:dashed;}
+                            p.mix{border-style:dotted dashed solid double;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>2.Border width</h4>
-                <li>specifies the width of the four borders.</li>
-                <code>
-                p.one{
-                    border-style:solid;
-                    border-width:5px;}
-            </code>
+                <li>specifies the width of the four borders.
+                    <p class="box"><code>
+                            p.one{
+                            border-style:solid;
+                            border-width:5px;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>3.Border color</h4>
-                <li>specifies the color of the four borders.</li>
-                <code>
-                p.one{
-                    border-style:solid;
-                    border-color:red;}
-            </code>
+                <li>specifies the color of the four borders.
+                    <p class="box"> <code>
+                            p.one{
+                            border-style:solid;
+                            border-color:red;}
+                        </code></p>
+                </li>
+
                 <h3>Border shorthand</h3>
                 <li>The border property is a shorthand property for the folloeing individual border properties</li>
                 <li>border-width</li>
                 <li>border-style(Required)</li>
                 <li>border-color</li>
                 <h3>Rounded-borders</h3>
-                <li>The border-radius property is used to add rounded border to an element:</li>
-                <code>
-                p{
-                    border:2px solid black;
-                    border-radius:5px;
-                }
-            </code>
+                <li>The border-radius property is used to add rounded border to an element:
+                    <p class="box"><code>
+                            p{
+                            border:2px solid black;
+                            border-radius:5px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
         </div>
+        <p class="foot">Page 5</p>
     </section>
-    <section class="outline">
+    <section class="page">
         <div>
             <ul>
                 <h4>1.Outline style</h4>
@@ -748,39 +880,49 @@
             </ul>
             <ul>
                 <h4>2.Outline Width</h4>
-                <li>Specifies the width of the outline</li>
-                <code>
-                    p.ex1{
-                        border:1px solid black;
-                        outline-style:solid;
-                        outline-color:red;
-                        outline-width:thin;
-                    }
-                </code>
+                <li>Specifies the width of the outline
+                    <p class="box"><code>
+                            p.ex1{
+                            border:1px solid black;
+                            outline-style:solid;
+                            outline-color:red;
+                            outline-width:thin;
+                            }
+                        </code></p>
+                </li>
+
                 <h3>Outline shorthand</h3>
-                <li>The outline property is a shorthand property for setting the following individual outline properties.</li>
+                <li>The outline property is a shorthand property for setting the following individual outline
+                    properties.</li>
                 <li>Outline-width</li>
                 <li>Outline-style(Required)</li>
-                <li>OUtline-color</li>
-                <code>
-                    p.ex3{outline:5px solid yellow;}
-                </code>
+                <li>OUtline-color
+                    <p class="box"><code>
+                            p.ex3{outline:5px solid yellow;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h3>Outline offset</h3>
-                <li>The outline-offset property add space between an outline and the edge/border of an element</li>
-                <code>
-                    p{
-                        margin:30px;
-                        border:1px solid black;
-                        outline:1px solid red;
-                        outline-offset:15px;
-                    }
-                </code>
+                <li>The outline-offset property add space between an outline and the edge/border of an element
+                    <p class="box">
+                        <code>
+                            p{
+                            margin:30px;
+                            border:1px solid black;
+                            outline:1px solid red;
+                            outline-offset:15px;
+                            }
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
                 <h3>Box-Model</h3>
-                <p>The css box model is essentially a box that wrap around every Html element.It consist of margin,border,padding, and the actual content. The image below illustrate the box model</p>
+                <p>The css box model is essentially a box that wrap around every Html element.It consist of
+                    margin,border,padding, and the actual content. The image below illustrate the box model</p>
 
             </ul>
             <ul>
@@ -805,127 +947,167 @@
                 <li>a:active-a link the moment it is clicked</li>
             </ul>
             <ul>
-                <h4>1.color Example:</h4>
-                <code>
+                <h4>1. color Example:</h4>
+                <p class="box"><code>
                         a:link{color:red;}
                         a:visited{color:green;}
                         a:hover{color:pink;}
                         a:active{color:blue;}
-                    </code>
+                    </code></p>
             </ul>
             <ul>
-                <h4>2.Background color Example:</h4>
-                <code>
+                <h4>2. Background color Example:</h4>
+                <p class="box"><code>
                         a:link{background-color:red;}
                         a:visited{background-color:green;}
                         a:hover{background-color:pink;}
                         a:active{background-color:blue;}
-                    </code>
+                    </code></p>
             </ul>
             <ul>
                 <h4>3.Link buttons(with border)</h4>
-                <code>
-                        a:link,a:visited{border:solid 3px #f44336; color:red; padding:14px 25px; text-align:center; text-decoration:none;}
+                <p class="box"><code>
+                        a:link,a:visited{border:solid 3px #f44336; color:red; padding:14px 25px; text-align:center;
+                        text-decoration:none;}
                         a:hover,a:active{background-color:red; color:white;}
-                    </code>
+                    </code></p>
             </ul>
         </div>
+        <p class="foot">Page 5</p>
     </section>
-    <section class="css table">
+    <section class="page">
         <div>
             <ul>
-                <h4>1.Table borders</h4>
-                <li>To specifies the table borders in css, use the border property.</li>
-                <code>
-                    table,th,td{border:1px solid black;}
-                </code>
+                <h4>1. Table borders</h4>
+                <li>To specifies the table borders in css, use the border property.
+                    <p class="box"><code>
+                            table,th,td{border:1px solid black;}
+                        </code>
+                    </p>
+                </li>
             </ul>
             <ul>
-                <h4>2.collapse table borders</h4>
-                <li>To specifies the border collapse property set wether the table border should be collapsed into a single border</li>
-                <code>
-                    table{border-collapse:collapse;}
-                    table,th,td{border:1px solid black;}
-                </code>
+                <h4>2. Collapse table borders</h4>
+                <li>To specifies the border collapse property set wether the table border should be collapsed into a
+                    single border
+                    <p class="box">
+                        <code>
+                            table{border-collapse:collapse;}
+                            table,th,td{border:1px solid black;}
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
-                <h4>3.Table width and height</h4>
-                <li>Width and height of the table are defined by the width and height properties.</li>
-                <code>
-                    table{width:100%;}
-                    th{height:50px;}
-                </code>
+                <h4>3. Table width and height</h4>
+                <li>Width and height of the table are defined by the width and height properties.
+                    <p class="box"> <code>
+                            table{width:100%;}
+                            th{height:50px;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>4.Horizontal alignment</h4>
-                <li>The text align property sets the horizontal alignment(likeleft,right,or center) of the content in &lt;th&gt; or &lt;td&gt;.</li>
-                <code>
-                    th{text-align:left;}
-                </code>
+                <h4>4. Horizontal alignment</h4>
+                <li>The text align property sets the horizontal alignment(likeleft,right,or center) of the content in
+                    &lt;th&gt; or &lt;td&gt;.
+                    <p class="box">
+                        <code>
+                            th{text-align:left;}
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
-                <h4>5.Vertical alignment</h4>
-                <li>The vertical align property sets the vertical alignment (like top,bottom,or middle) of the content in &lt;th&gt; or &lt;td&gt;.</li>
-                <code>
-                    td{height:50px; vertical-align:bottom;}
-                </code>
+                <h4>5. Vertical alignment</h4>
+                <li>The vertical align property sets the vertical alignment (like top,bottom,or middle) of the content
+                    in &lt;th&gt; or &lt;td&gt;.
+                    <p class="box">
+                        <code>
+                            td{height:50px; vertical-align:bottom;}
+                        </code>
+                    </p>
+                </li>
+
             </ul>
             <ul>
-                <h4>6.Table padding</h4>
-                <li>To control the space between the border and the content in a table, use the padding property on the &lt;th&gt; and &lt;td&gt; element:</li>
-                <code>
-                    th,td{padding:15px;
-                    text-align:left;}
-                </code>
+                <h4>6. Table padding</h4>
+                <li>To control the space between the border and the content in a table, use the padding property on the
+                    &lt;th&gt; and &lt;td&gt; element:
+                    <p class="box"> <code>
+                            th,td{padding:15px;
+                            text-align:left;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>7.Horizontal Dividers</h4>
-                <li>Add the border-bottom property to &lt;th&gt; or &lt;td&gt; for horizontal dividers:</li>
-                <code>
-                    th,td{border-bottom:1px solid #ddd;}
-                </code>
+                <h4>7. Horizontal Dividers</h4>
+                <li>Add the border-bottom property to &lt;th&gt; or &lt;td&gt; for horizontal dividers:
+                    <p class="box"> <code>
+                            th,td{border-bottom:1px solid #ddd;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>*.Hoverable table</h4>
-                <li>Use the :hover selection on &lt;tr&gt; to highlight table row on mouse over.</li>
-                <code>
-                    tr:hover{background-color:#f5f5f5;}
-                </code>
+                <h4>8. Hoverable table</h4>
+                <li>Use the :hover selection on &lt;tr&gt; to highlight table row on mouse over.
+                    <p class="box"> <code>
+                            tr:hover{background-color:#f5f5f5;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>9.striped tables</h4>
-                <li>For zebra striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows</li>
-                <code>
-                    tr:nth-child(even){background-color:#f2f2f2;}
-                </code>
+                <h4>9. striped tables</h4>
+                <li>For zebra striped tables, use the nth-child() selector and add a background-color to all even (or
+                    odd) table rows
+                    <p class="box"> <code>
+                            tr:nth-child(even){background-color:#f2f2f2;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>10.Responsive Table</h4>
-                <li>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Add a container element(like &lt;div&gt;) with overflow-x :auto around the &lt;tab;e&gt; element to make it responsive</li>
+                <h4>10. Responsive Table</h4>
+                <li>A responsive table will display a horizontal scroll bar if the screen is too small to display the
+                    full content. Add a container element(like &lt;div&gt;) with overflow-x :auto around the
+                    &lt;tab;e&gt; element to make it responsive</li>
                 <li>&lt;div style="overflow-x:auto;"&gt;</li>
             </ul>
             <ul>
-                <h4>11.Border-spacing</h4>
-                <li>The border spacing property sets the bistance between the border of adjacent cells.</li>
-                <code>
-                    #table1{border-collapse:seprate;
-                     border-spacing:15px;
-                    }
-                </code>
+                <h4>11. Border-spacing</h4>
+                <li>The border spacing property sets the bistance between the border of adjacent cells.
+                    <p class="box"><code>
+                            #table1{border-collapse:seprate;
+                            border-spacing:15px;
+                            }
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>12.Caption-side</h4>
-                <li>The caption side proprty specifies the placement of the table caption</li>
-                <code>
-                    #example1{caption-side:bottom;}
-                </code>
+                <h4>12. Caption-side</h4>
+                <li>The caption side proprty specifies the placement of the table caption
+                    <p class="box"><code>
+                            #example1{caption-side:bottom;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>13.Empty-cells</h4>
-                <li>The empty cells property sets wether or not to display border on empty cells in the table.This property has no effect if border-collapse is "collapse"</li>
-                <code>
-                    table{empty-cells:hide;}
-                </code>
+                <h4>13. Empty-cells</h4>
+                <li>The empty cells property sets wether or not to display border on empty cells in the table.This
+                    property has no effect if border-collapse is "collapse"
+                    <p class="box"> <code>
+                            table{empty-cells:hide;}
+                        </code></p>
+                </li>
+
             </ul>
             <h2>Display property</h2>
             <ul>
@@ -933,15 +1115,20 @@
                 <li>Block</li>
                 <li>Inline</li>
             </ul>
-            <p>1.Block level element:-Block-level element always start on a new line and takes up the full width avaliable:-&lt;div&gt;,&lt;h1&gt;-&lt;h6&gt;,&lt;p&gt;,&lt;form&gt;,&lt;header&gt;</p>
-            <p>2.Inline element:-An inline element does not start on a new line and only takes up as much width as necessary. &lt;span&gt;,&lt;a&gt;,&lt;img&gt;</p>
+            <p>1.Block level element:-Block-level element always start on a new line and takes up the full width
+                avaliable:-&lt;div&gt;,&lt;h1&gt;-&lt;h6&gt;,&lt;p&gt;,&lt;form&gt;,&lt;header&gt;</p>
+            <p>2.Inline element:-An inline element does not start on a new line and only takes up as much width as
+                necessary. &lt;span&gt;,&lt;a&gt;,&lt;img&gt;</p>
             <ul>
                 <h4>Display value</h4>
-                <li>None:-is commonly used with javascript to hide and show element without deleting and recreating them</li>
-                <li>Inline:-A common example is making inline &lt;li&gt; element for horizontal menus;</li>
-                <code>
-                    li{display:inline;}
-                </code>
+                <li>None:-is commonly used with javascript to hide and show element without deleting and recreating them
+                </li>
+                <li>Inline:-A common example is making inline &lt;li&gt; element for horizontal menus;
+                    <p class="box"> <code>
+                            li{display:inline;}
+                        </code></p>
+                </li>
+
             </ul>
             <h2>Position property</h2>
             <ul>
@@ -953,54 +1140,74 @@
                 <li>Sticky</li>
             </ul>
             <ul>
-                <h4>1.Position:static;</h4>
-                <li>static positioned element are not affected by the top,bottom,left, and right properties</li>
-                <code>
-                    div.static{position:static; border:3px solid #73AD21;}
-                </code>
+                <h4>1. Position:static;</h4>
+                <li>static positioned element are not affected by the top,bottom,left, and right properties
+                    <p class="box"> <code>
+                            div.static{position:static; border:3px solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>2.Position:relative;</h4>
-                <li>An element with position:relative; is positioned relative to its normal position</li>
-                <code>
-                    div.Relative{position:relative; border:3px solid #73AD21;}
-                </code>
+                <h4>2. Position:relative;</h4>
+                <li>An element with position:relative; is positioned relative to its normal position
+                    <p class="box"><code>
+                            div.Relative{position:relative; border:3px solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>3.Position:Fixed;</h4>
-                <li>An element with position:fixed; is positioned relative to viewport, which means it always stay in the same place even if the page is scrolled.</li>
-                <code>
-                    div.fixwd{position:fixed; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
-                </code>
+                <h4>3. Position:Fixed;</h4>
+                <li>An element with position:fixed; is positioned relative to viewport, which means it always stay in
+                    the same place even if the page is scrolled.
+                    <p class="box"><code>
+                            div.fixwd{position:fixed; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>4.Position:absolute;</h4>
-                <li>An element with position:absolute; is positioned relative to the nearest positional ancestor</li>
-                <code>
-                    div.absolute{position:absolute; top:80px; height:100px; bottom:0; width:300px; right:0; border:3px solid #73AD21;}
-                </code>
+                <h4>4. Position:absolute;</h4>
+                <li>An element with position:absolute; is positioned relative to the nearest positional ancestor
+                    <p class="box"><code>
+                            div.absolute{position:absolute; top:80px; height:100px; bottom:0; width:300px; right:0;
+                            border:3px
+                            solid #73AD21;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>5.position:sticky;</h4>
-                <li>An element with position:sticky; is positioned based on user scroll position.</li>
-                <code>
-                    div.sticky{position:-webkit-sticky; /*safari*/ position:sticky; top:0;n background-color:green; border:2px solid #4CAF50}
-                </code>
+                <h4>5. position:sticky;</h4>
+                <li>An element with position:sticky; is positioned based on user scroll position.
+                    <p class="box"> <code>
+                            div.sticky{position:-webkit-sticky; /*safari*/ position:sticky; top:0;n
+                            background-color:green;
+                            border:2px solid #4CAF50}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
-                <h4>6.overlapping element</h4>
-                <li>The z-index property specifies the stack order of an element (which element should be placed in front of, or behind,the others).</li>
-                <code>
-                    img{position:absolute; left:0; top:0; z-index:-1;}
-                </code>
+                <h4>6. overlapping element</h4>
+                <li>The z-index property specifies the stack order of an element (which element should be placed in
+                    front of, or behind,the others).
+                    <p class="box"><code>
+                            img{position:absolute; left:0; top:0; z-index:-1;}
+                        </code></p>
+                </li>
+
             </ul>
         </div>
+        <p class="foot">Page 6</p>
     </section>
-    <section class="overflow">
+    <section class="page">
         <div>
             <h2>overflow</h2>
             <ul>
-                <p>The overflow property specifies wether to clip the content or to add scrollbars when the content of the element is too big to fit in the specifies area.</p>
+                <p>The overflow property specifies wether to clip the content or to add scrollbars when the content of
+                    the element is too big to fit in the specifies area.</p>
                 <table>
                     <tr>
                         <th>Value</th>
@@ -1024,41 +1231,49 @@
                     </tr>
                 </table>
                 <h4>overflow-x and overflow-y</h4>
-                <li>The overflow-x and overflow-y property specefies wether to change the overflow of content to just horizontally or vertyically.</li>
-                <code>
-                        div{overflow-x:hidden;
-                        overflow-y:scroll;}
-                    </code>
+                <li>The overflow-x and overflow-y property specefies wether to change the overflow of content to just
+                    horizontally or vertyically.
+                    <p class="box"><code>
+                            div{overflow-x:hidden;
+                            overflow-y:scroll;}
+                        </code></p>
+                </li>
+
             </ul>
             <ul>
                 <h4>Float</h4>
-                <li>The float property is used for positioning and formatting e.g let an image float to the text in a container</li>
-                <table>
-                    <tr>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>left</td>
-                        <td>the element float to the left of its container</td>
-                    </tr>
-                    <tr>
-                        <td>right</td>
-                        <td>the element float to the right side of the container</td>
-                    </tr>
-                    <tr>
-                        <td>none</td>
-                        <td>The element does not float(will be displayed just where it occur in the text). This is default</td>
-                    </tr>
-                    <tr>
-                        <td>inherit</td>
-                        <td>The element inherit the float value of its parent</td>
-                    </tr>
-                </table>
+                <li>The float property is used for positioning and formatting e.g let an image float to the text in a
+                    container
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>left</td>
+                            <td>the element float to the left of its container</td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td>the element float to the right side of the container</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td>The element does not float(will be displayed just where it occur in the text). This is
+                                default</td>
+                        </tr>
+                        <tr>
+                            <td>inherit</td>
+                            <td>The element inherit the float value of its parent</td>
+                        </tr>
+                    </table>
+                </li>
+
             </ul>
             <ul>
                 <h4>Clear</h4>
-                <li>The clear property specifies what element can float beside the cleared element and on which side</li>
+                <li>The clear property specifies what element can float beside the cleared element and on which side
+                </li>
                 <table>
                     <tr>
                         <th>Value</th>
@@ -1085,9 +1300,9 @@
             <ul>
                 <h4>Opacity</h4>
                 <p>The opacity property can take a value from 0.0-1.0 The lower value the more transparent</p>
-                <code>
+                <p class="box"><code>
                         img{opacity:0.5;}
-                    </code>
+                    </code></p>
             </ul>
         </div>
     </section>
@@ -1095,7 +1310,7 @@
         <div>
             <ul>
                 <h4>Horizontal navigation bar(Menu bar)</h4>
-                <code>
+                <p class="box"> <code>
                         ul{list-style-type:none; margin:0;
                         padding:0; overflow:hidden; background-color:#333;}
 
@@ -1103,7 +1318,7 @@
 
                         li a{display:block; color:white; text-align:center;
                         padding:14px 16px; text-decoration:none;}
-                    </code>
+                    </code></p>
             </ul>
             <ul>
                 <h2>CSS Transform</h2>
@@ -1112,21 +1327,29 @@
             </ul>
             <ul>
                 <li>The translate() method</li>
-                <li>The rotate() method rotates an element clockwise or counter-clockwise according to a certain degree.</li>
+                <li>The rotate() method rotates an element clockwise or counter-clockwise according to a certain degree.
+                </li>
                 <li>Example:- div{transform:rotate(20deg);}</li>
                 <li>The rotate() method</li>
-                <li>The translate method() moves an element from its current position(according to the parameters given for the X-axis and the Y-axis).</li>
+                <li>The translate method() moves an element from its current position(according to the parameters given
+                    for the X-axis and the Y-axis).</li>
                 <li>Example:- div{transform:translate(50px, 100px);}</li>
                 <li>The scale() Method</li>
-                <li>The scale() method increase or decrease the size of an element(according to the parameter given for the width and the height).</li>
+                <li>The scale() method increase or decrease the size of an element(according to the parameter given for
+                    the width and the height).</li>
                 <li>Example:- div{transform:scale(2,3);}</li>
-                <li>The scaleX() method:- The scaleX() method increase or decrease the width of an element.Example: div{transform:scaleX(2)}</li>
-                <li>The scaleY() method:- The scaleY() method increase or decrease the height of an element. Example:div{transform: scaleY(3);}</li>
+                <li>The scaleX() method:- The scaleX() method increase or decrease the width of an element.Example:
+                    div{transform:scaleX(2)}</li>
+                <li>The scaleY() method:- The scaleY() method increase or decrease the height of an element.
+                    Example:div{transform: scaleY(3);}</li>
                 <li>The skew method:- The skew() method skews an element along the X and Y-axis given by the angles</li>
                 <li>Example:-div{transform:skew(20deg, 10deg);}</li>
-                <li>The skew() method skews an element along the X and Y-axis given by angles.Example:-div{transform:skew(20deg, 10deg);}</li>
-                <li>The matrix() method:-The matrix() method take six parameters, contaning mathematic functions, which allows you to rotate, scale, move(translate), and skew elements.</li>
-                <p>The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) div{transform:matrix(1,-0.3,0,1,0,0);}
+                <li>The skew() method skews an element along the X and Y-axis given by
+                    angles.Example:-div{transform:skew(20deg, 10deg);}</li>
+                <li>The matrix() method:-The matrix() method take six parameters, contaning mathematic functions, which
+                    allows you to rotate, scale, move(translate), and skew elements.</li>
+                <p>The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+                    div{transform:matrix(1,-0.3,0,1,0,0);}
                 </p>
             </ul>
 
@@ -1134,11 +1357,14 @@
             <ul>
                 <h4>3 3D Transforms</h4>
                 <li>With the CSS transform property you can use the following 3d transformation methods:</li>
-                <li>The rotateX() method:- The rotate X() method rotates an element around it's X-axis at a given degree: Example:-#myDiv{transform:rotateX(150deg);}
+                <li>The rotateX() method:- The rotate X() method rotates an element around it's X-axis at a given
+                    degree: Example:-#myDiv{transform:rotateX(150deg);}
                 </li>
-                <li>The rotateY() method:- The rotateY() method rotates an element around it's Y-axis at a given degree: Example:-#myDiv{transform:rotateY(150deg);}
+                <li>The rotateY() method:- The rotateY() method rotates an element around it's Y-axis at a given degree:
+                    Example:-#myDiv{transform:rotateY(150deg);}
                 </li>
-                <li>The rotateZ() method:- The rotateZ() method rotates an element around it's Z-axis at a given degree: Example:-#myDiv{transform:rotateZ(150deg);}
+                <li>The rotateZ() method:- The rotateZ() method rotates an element around it's Z-axis at a given degree:
+                    Example:-#myDiv{transform:rotateZ(150deg);}
                 </li>
             </ul>
             <ul>
@@ -1286,6 +1512,7 @@
                 <li>both The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions</li>
             </ul>
         </div>
+        <p class="foot">Page 7</p>
     </section>
 </body>
 
